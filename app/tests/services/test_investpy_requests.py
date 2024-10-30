@@ -21,19 +21,19 @@ async def test_get_stocks():
     assert not data.empty, "Data should not be empty"
     save_test_data('stocks.json', data.to_dict())
 
-@pytest.mark.asyncio
-async def test_get_funds():
-    data = await get_investpy_data("funds")
-    assert isinstance(data, pd.DataFrame), f"Expected DataFrame, got {type(data)}"
-    assert not data.empty, "Data should not be empty"
-    save_test_data('funds.json', data.to_dict())
+# @pytest.mark.asyncio
+# async def test_get_funds():
+#     data = await get_investpy_data("funds")
+#     assert isinstance(data, pd.DataFrame), f"Expected DataFrame, got {type(data)}"
+#     assert not data.empty, "Data should not be empty"
+#     save_test_data('funds.json', data.to_dict())
 
-@pytest.mark.asyncio
-async def test_get_etfs():
-    data = await get_investpy_data("etfs")
-    assert isinstance(data, pd.DataFrame), f"Expected DataFrame, got {type(data)}"
-    assert not data.empty, "Data should not be empty"
-    save_test_data('etfs.json', data.to_dict())
+# @pytest.mark.asyncio
+# async def test_get_etfs():
+#     data = await get_investpy_data("etfs")
+#     assert isinstance(data, pd.DataFrame), f"Expected DataFrame, got {type(data)}"
+#     assert not data.empty, "Data should not be empty"
+#     save_test_data('etfs.json', data.to_dict())
 
 @pytest.mark.asyncio
 async def test_get_currency_crosses():
@@ -42,33 +42,33 @@ async def test_get_currency_crosses():
     assert not data.empty, "Data should not be empty"
     save_test_data('currency_crosses.json', data.to_dict())
 
-@pytest.mark.asyncio
-async def test_get_indices():
-    data = await get_investpy_data("indices")
-    assert isinstance(data, pd.DataFrame), f"Expected DataFrame, got {type(data)}"
-    assert not data.empty, "Data should not be empty"
-    save_test_data('indices.json', data.to_dict())
+# @pytest.mark.asyncio
+# async def test_get_indices():
+#     data = await get_investpy_data("indices")
+#     assert isinstance(data, pd.DataFrame), f"Expected DataFrame, got {type(data)}"
+#     assert not data.empty, "Data should not be empty"
+#     save_test_data('indices.json', data.to_dict())
 
-@pytest.mark.asyncio
-async def test_get_bonds():
-    data = await get_investpy_data("bonds")
-    assert isinstance(data, pd.DataFrame), f"Expected DataFrame, got {type(data)}"
-    assert not data.empty, "Data should not be empty"
-    save_test_data('bonds.json', data.to_dict())
+# @pytest.mark.asyncio
+# async def test_get_bonds():
+#     data = await get_investpy_data("bonds")
+#     assert isinstance(data, pd.DataFrame), f"Expected DataFrame, got {type(data)}"
+#     assert not data.empty, "Data should not be empty"
+#     save_test_data('bonds.json', data.to_dict())
 
-@pytest.mark.asyncio
-async def test_get_commodities():
-    data = await get_investpy_data("commodities")
-    assert isinstance(data, pd.DataFrame), f"Expected DataFrame, got {type(data)}"
-    assert not data.empty, "Data should not be empty"
-    save_test_data('commodities.json', data.to_dict())
+# @pytest.mark.asyncio
+# async def test_get_commodities():
+#     data = await get_investpy_data("commodities")
+#     assert isinstance(data, pd.DataFrame), f"Expected DataFrame, got {type(data)}"
+#     assert not data.empty, "Data should not be empty"
+#     save_test_data('commodities.json', data.to_dict())
 
-@pytest.mark.asyncio
-async def test_get_certificates():
-    data = await get_investpy_data("certificates")
-    assert isinstance(data, pd.DataFrame), f"Expected DataFrame, got {type(data)}"
-    assert not data.empty, "Data should not be empty"
-    save_test_data('certificates.json', data.to_dict())
+# @pytest.mark.asyncio
+# async def test_get_certificates():
+#     data = await get_investpy_data("certificates")
+#     assert isinstance(data, pd.DataFrame), f"Expected DataFrame, got {type(data)}"
+#     assert not data.empty, "Data should not be empty"
+#     save_test_data('certificates.json', data.to_dict())
 
 @pytest.mark.asyncio
 async def test_get_cryptocurrencies():

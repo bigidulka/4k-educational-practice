@@ -1,7 +1,6 @@
 # File path: tests/services/test_yfinance_requests.py
 
 import pytest
-import asyncio
 import json
 from src.services.yfinance_requests import get_current_data, get_historical_data
 import pandas as pd

@@ -1,152 +1,176 @@
-# File path: app/endpoints/routes.py
-
+# File path: src/endpoints/routes.py
 from fastapi import APIRouter, HTTPException, Query
-from services import investpy_requests as investpy_services
-from services import yfinance_requests as yfinance_services
+from src.services import investpy_requests as investpy_services
+from src.services import yfinance_requests as yfinance_services
+from typing import Optional, List, Dict
+from datetime import datetime
 
 router = APIRouter()
 
-@router.get("/")
-async def root():
-    return {"message": "Добро пожаловать в финансовый API"}
+
+@router.get("/", response_model=Dict[str, str])
+async def root() -> Dict[str, str]:
+    """
+    Корневой эндпоинт, возвращающий приветственное сообщение.
+
+    Returns:
+        dict: Словарь с приветственным сообщением.
+    """
+    return {"message": "Добро пожаловать в Финансовое API"}
 
 
-# Эндпоинты для получения списков котировок с помощью investpy
-@router.get("/stocks")
-async def get_stocks(country: str = None, limit: int = Query(None, ge=1)):
+@router.get("/stocks", response_model=List[Dict])
+async def get_stocks(
+    country: Optional[str] = None
+) -> List[Dict]:
+    """
+    Получает список акций, с возможной фильтрацией по стране.
+
+    Параметры:
+        country (Optional[str]): Страна для фильтрации акций.
+
+    Returns:
+        List[dict]: Список словарей с информацией об акциях.
+
+    Raises:
+        HTTPException: Если не удалось получить данные об акциях.
+    """
     try:
         stocks = await investpy_services.get_stocks()
+        if stocks is None:
+            raise HTTPException(status_code=500, detail="Не удалось получить данные об акциях")
         if country:
             stocks = stocks[stocks['country'].str.lower() == country.lower()]
-        data = stocks.to_dict(orient="records")
-        if limit:
-            data = data[:limit]
-        return data
+        return stocks.to_dict(orient="records")
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@router.get("/funds")
-async def get_funds(limit: int = Query(None, ge=1)):
-    try:
-        funds = await investpy_services.get_funds()
-        data = funds.to_dict(orient="records")
-        if limit:
-            data = data[:limit]
-        return data
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+@router.get("/cryptocurrencies", response_model=List[Dict])
+async def get_cryptocurrencies() -> List[Dict]:
+    """
+    Получает список криптовалют.
 
+    Returns:
+        List[dict]: Список словарей с информацией о криптовалютах.
 
-@router.get("/etfs")
-async def get_etfs(limit: int = Query(None, ge=1)):
-    try:
-        etfs = await investpy_services.get_etfs()
-        data = etfs.to_dict(orient="records")
-        if limit:
-            data = data[:limit]
-        return data
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-@router.get("/currencies")
-async def get_currency_crosses(limit: int = Query(None, ge=1)):
-    try:
-        currencies = await investpy_services.get_currency_crosses()
-        data = currencies.to_dict(orient="records")
-        if limit:
-            data = data[:limit]
-        return data
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-@router.get("/indices")
-async def get_indices(limit: int = Query(None, ge=1)):
-    try:
-        indices = await investpy_services.get_indices()
-        data = indices.to_dict(orient="records")
-        if limit:
-            data = data[:limit]
-        return data
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-@router.get("/bonds")
-async def get_bonds(limit: int = Query(None, ge=1)):
-    try:
-        bonds = await investpy_services.get_bonds()
-        data = bonds.to_dict(orient="records")
-        if limit:
-            data = data[:limit]
-        return data
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-@router.get("/commodities")
-async def get_commodities(limit: int = Query(None, ge=1)):
-    try:
-        commodities = await investpy_services.get_commodities()
-        data = commodities.to_dict(orient="records")
-        if limit:
-            data = data[:limit]
-        return data
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-@router.get("/certificates")
-async def get_certificates(limit: int = Query(None, ge=1)):
-    try:
-        certificates = await investpy_services.get_certificates()
-        data = certificates.to_dict(orient="records")
-        if limit:
-            data = data[:limit]
-        return data
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-@router.get("/cryptocurrencies")
-async def get_cryptocurrencies(limit: int = Query(None, ge=1)):
+    Raises:
+        HTTPException: Если не удалось получить данные о криптовалютах.
+    """
     try:
         cryptocurrencies = await investpy_services.get_cryptocurrencies()
-        data = cryptocurrencies.to_dict(orient="records")
-        if limit:
-            data = data[:limit]
-        return data
+        if cryptocurrencies is None:
+            raise HTTPException(status_code=500, detail="Не удалось получить данные о криптовалютах")
+        return cryptocurrencies.to_dict(orient="records")
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# Эндпоинты для получения исторических данных с помощью investpy
-@router.get("/historical/{market}/{symbol}")
+@router.get("/currency_crosses", response_model=List[Dict[str, str]])
+async def get_currency_crosses() -> List[Dict[str, str]]:
+    """
+    Получает список валютных пар.
+
+    Returns:
+        List[Dict[str, str]]: Список словарей с информацией о валютных парах.
+
+    Raises:
+        HTTPException: Если не удалось получить данные о валютных парах.
+    """
+    try:
+        currency_crosses = await investpy_services.get_currency_crosses()
+        if currency_crosses is None:
+            raise HTTPException(status_code=500, detail="Не удалось получить данные о валютных парах")
+        
+        return currency_crosses.to_dict(orient="records")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.get("/historical/{market}/{symbol}", response_model=List[Dict])
 async def get_historical_data(
     market: str,
     symbol: str,
-    from_date: str = '01/01/2020',
-    to_date: str = '01/01/2023',
-    country: str = None
-):
+    from_date: str = Query('2020-01-01', regex=r'^\d{4}-\d{2}-\d{2}$', description="Начальная дата в формате YYYY-MM-DD"),
+    to_date: str = Query('2023-01-01', regex=r'^\d{4}-\d{2}-\d{2}$', description="Конечная дата в формате YYYY-MM-DD"),
+    utc_offset: int = Query(0, ge=-12, le=14, description="Смещение UTC в часах (например, 3 для UTC+3)"),
+    interval: str = Query('1d', regex=r'^(1m|5m|15m|30m|60m|90m|1h|1d|5d|1wk|1mo|3mo)$', description="Интервал данных (например, '1d')")
+) -> List[Dict]:
+    """
+    Получает исторические данные для указанного рынка и символа в заданном диапазоне дат и часовом поясе.
+
+    Параметры:
+        market (str): Тип рынка (например, "stock", "crypto").
+        symbol (str): Тикер символа.
+        from_date (str): Начальная дата в формате "YYYY-MM-DD".
+        to_date (str): Конечная дата в формате "YYYY-MM-DD".
+        utc_offset (int): Смещение UTC в часах (например, 3 для UTC+3, -5 для UTC-5).
+        interval (str): Интервал данных (например, "1m", "5m", "1d").
+
+    Returns:
+        List[dict]: Список исторических записей данных.
+
+    Raises:
+        HTTPException: Если данные не найдены, даты некорректны или произошла другая ошибка.
+    """
     try:
-        historical_data = await investpy_services.get_historical_data(market, symbol, from_date, to_date, country)
-        if historical_data is None or historical_data.empty:
-            raise HTTPException(status_code=404, detail=f"{market.capitalize()} '{symbol}' не найден или данные недоступны")
-        return historical_data.reset_index().to_dict(orient='records')
+        from_date_obj = datetime.strptime(from_date, '%Y-%m-%d')
+        to_date_obj = datetime.strptime(to_date, '%Y-%m-%d')
+
+        if utc_offset == 0:
+            utc_timezone = "UTC"
+        elif utc_offset > 0:
+            utc_timezone = f"Etc/GMT-{utc_offset}"
+        else:
+            utc_timezone = f"Etc/GMT+{abs(utc_offset)}"
+
+        historical_data = await yfinance_services.get_historical_data(
+            market,
+            symbol,
+            from_date_obj.strftime('%Y-%m-%d'),
+            to_date_obj.strftime('%Y-%m-%d'),
+            utc_timezone,
+            interval
+        )
+        if historical_data is None or not historical_data:
+            raise HTTPException(
+                status_code=404,
+                detail=f"{market.capitalize()} '{symbol}' не найден или данные недоступны"
+            )
+        return historical_data
+    except ValueError as ve:
+        raise HTTPException(status_code=400, detail=str(ve))
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# Эндпоинты для получения текущих данных с помощью yfinance
-@router.get("/current/{market}/{symbol}")
-async def get_current_data(market: str, symbol: str):
+@router.get("/current/{market}/{symbol}", response_model=Dict)
+async def get_current_data(
+    market: str,
+    symbol: str,
+    interval: str = Query('1d', regex=r'^(1m|5m|15m|30m|60m|90m|1h|1d|5d|1wk|1mo|3mo)$', description="Интервал данных (например, '1d')")
+) -> Dict:
+    """
+    Получает текущие данные для указанного рынка и символа.
+
+    Параметры:
+        market (str): Тип рынка (например, "stock", "crypto").
+        symbol (str): Тикер символа.
+        interval (str): Интервал данных (например, "1m", "5m", "1d").
+
+    Returns:
+        dict: Последняя запись данных для указанного тикера.
+
+    Raises:
+        HTTPException: Если данные не найдены или произошла другая ошибка.
+    """
     try:
-        current_data = await yfinance_services.get_current_data(market, symbol)
+        current_data = await yfinance_services.get_current_data(market, symbol, interval)
         if current_data is None:
-            raise HTTPException(status_code=404, detail=f"{market.capitalize()} '{symbol}' не найден")
+            raise HTTPException(
+                status_code=404,
+                detail=f"{market.capitalize()} '{symbol}' не найден"
+            )
         return current_data
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
