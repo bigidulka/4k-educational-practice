@@ -77,20 +77,6 @@ async def get_historical_data(
     client_timezone: str,
     interval: str = "1d"
 ) -> Optional[List[Dict[str, Any]]]:
-    """
-    Получает исторические данные для указанного рынка и символа в заданном часовом поясе.
-
-    Параметры:
-        market (str): Тип рынка (например, "stock", "crypto").
-        symbol (str): Символ тикера на указанном рынке.
-        from_date (str): Начальная дата в формате "YYYY-MM-DD".
-        to_date (str): Конечная дата в формате "YYYY-MM-DD".
-        client_timezone (str): Часовой пояс клиента (например, "Europe/Moscow").
-        interval (str): Интервал данных (например, "1m", "5m", "1d").
-
-    Returns:
-        List[dict] или None: Список исторических записей данных или None, если данные отсутствуют.
-    """
     try:
         ticker_symbol = map_market_to_symbol(market.lower(), symbol)
         logging.info(f"Используемый тикер: {ticker_symbol}")
@@ -107,6 +93,13 @@ async def get_historical_data(
                     logging.error(f"Ошибка при конвертации часового пояса: {tz_error}")
                     raise ValueError(f"Некорректный часовой пояс: {client_timezone}")
 
+                # Flatten the MultiIndex columns
+                historical_data.columns = [
+                    '_'.join(filter(None, map(str, col))).strip()
+                    if isinstance(col, tuple) else col
+                    for col in historical_data.columns.values
+                ]
+
                 return historical_data.reset_index().to_dict(orient='records')
             else:
                 logging.warning(f"Нет данных для тикера: {ticker_symbol}")
@@ -121,7 +114,6 @@ async def get_historical_data(
     except Exception as e:
         logging.error(f"Ошибка в get_historical_data: {e}")
         return None
-
 
 async def fetch_historical_data(
     symbol: str,
