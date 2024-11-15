@@ -1,0 +1,5187 @@
+[
+    {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "currency": "USD"
+    },
+    {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "currency": "USD"
+    },
+    {
+        "name": "Binance Coin",
+        "symbol": "BNB",
+        "currency": "USD"
+    },
+    {
+        "name": "Tether",
+        "symbol": "USDT",
+        "currency": "USD"
+    },
+    {
+        "name": "Cardano",
+        "symbol": "ADA",
+        "currency": "USD"
+    },
+    {
+        "name": "Polkadot",
+        "symbol": "DOT",
+        "currency": "USD"
+    },
+    {
+        "name": "XRP",
+        "symbol": "XRP",
+        "currency": "USD"
+    },
+    {
+        "name": "Uniswap",
+        "symbol": "UNI",
+        "currency": "USD"
+    },
+    {
+        "name": "Litecoin",
+        "symbol": "LTC",
+        "currency": "USD"
+    },
+    {
+        "name": "Chainlink",
+        "symbol": "LINK",
+        "currency": "USD"
+    },
+    {
+        "name": "THETA",
+        "symbol": "THETA",
+        "currency": "USD"
+    },
+    {
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin Cash",
+        "symbol": "BCH",
+        "currency": "USD"
+    },
+    {
+        "name": "Stellar",
+        "symbol": "XLM",
+        "currency": "USD"
+    },
+    {
+        "name": "Terra",
+        "symbol": "LUNA",
+        "currency": "USD"
+    },
+    {
+        "name": "Wrapped Bitcoin",
+        "symbol": "WBTC",
+        "currency": "USD"
+    },
+    {
+        "name": "Dogecoin",
+        "symbol": "DOGE",
+        "currency": "USD"
+    },
+    {
+        "name": "VeChain",
+        "symbol": "VET",
+        "currency": "USD"
+    },
+    {
+        "name": "Crypto.com Coin",
+        "symbol": "CRO",
+        "currency": "USD"
+    },
+    {
+        "name": "Filecoin",
+        "symbol": "FIL",
+        "currency": "USD"
+    },
+    {
+        "name": "Aave",
+        "symbol": "AAVE",
+        "currency": "USD"
+    },
+    {
+        "name": "TRON",
+        "symbol": "TRX",
+        "currency": "USD"
+    },
+    {
+        "name": "IOTA",
+        "symbol": "MIOTA",
+        "currency": "USD"
+    },
+    {
+        "name": "Cosmos",
+        "symbol": "ATOM",
+        "currency": "USD"
+    },
+    {
+        "name": "Solana",
+        "symbol": "SOL",
+        "currency": "USD"
+    },
+    {
+        "name": "EOS",
+        "symbol": "EOS",
+        "currency": "USD"
+    },
+    {
+        "name": "Avalanche",
+        "symbol": "AVAX",
+        "currency": "USD"
+    },
+    {
+        "name": "Monero",
+        "symbol": "XMR",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin SV",
+        "symbol": "BSV",
+        "currency": "USD"
+    },
+    {
+        "name": "Kusama",
+        "symbol": "KSM",
+        "currency": "USD"
+    },
+    {
+        "name": "FTX Token",
+        "symbol": "FTT",
+        "currency": "USD"
+    },
+    {
+        "name": "Tezos",
+        "symbol": "XTZ",
+        "currency": "USD"
+    },
+    {
+        "name": "NEM",
+        "symbol": "XEM",
+        "currency": "USD"
+    },
+    {
+        "name": "BitTorrent",
+        "symbol": "BTT",
+        "currency": "USD"
+    },
+    {
+        "name": "Algorand",
+        "symbol": "ALGO",
+        "currency": "USD"
+    },
+    {
+        "name": "Neo",
+        "symbol": "NEO",
+        "currency": "USD"
+    },
+    {
+        "name": "Chiliz",
+        "symbol": "CHZ",
+        "currency": "USD"
+    },
+    {
+        "name": "Dai",
+        "symbol": "DAI",
+        "currency": "USD"
+    },
+    {
+        "name": "Huobi Token",
+        "symbol": "HT",
+        "currency": "USD"
+    },
+    {
+        "name": "Hedera Hashgraph",
+        "symbol": "HBAR",
+        "currency": "USD"
+    },
+    {
+        "name": "Elrond",
+        "symbol": "EGLD",
+        "currency": "USD"
+    },
+    {
+        "name": "SushiSwap",
+        "symbol": "SUSHI",
+        "currency": "USD"
+    },
+    {
+        "name": "Synthetix",
+        "symbol": "SNX",
+        "currency": "USD"
+    },
+    {
+        "name": "Dash",
+        "symbol": "DASH",
+        "currency": "USD"
+    },
+    {
+        "name": "Theta Fuel",
+        "symbol": "TFUEL",
+        "currency": "USD"
+    },
+    {
+        "name": "UNUS SED LEO",
+        "symbol": "LEO",
+        "currency": "USD"
+    },
+    {
+        "name": "The Graph",
+        "symbol": "GRT",
+        "currency": "USD"
+    },
+    {
+        "name": "Decred",
+        "symbol": "DCR",
+        "currency": "USD"
+    },
+    {
+        "name": "Maker",
+        "symbol": "MKR",
+        "currency": "USD"
+    },
+    {
+        "name": "Zilliqa",
+        "symbol": "ZIL",
+        "currency": "USD"
+    },
+    {
+        "name": "Compound",
+        "symbol": "COMP",
+        "currency": "USD"
+    },
+    {
+        "name": "Polygon",
+        "symbol": "MATIC",
+        "currency": "USD"
+    },
+    {
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "currency": "USD"
+    },
+    {
+        "name": "Enjin Coin",
+        "symbol": "ENJ",
+        "currency": "USD"
+    },
+    {
+        "name": "Ravencoin",
+        "symbol": "RVN",
+        "currency": "USD"
+    },
+    {
+        "name": "Basic Attention Token",
+        "symbol": "BAT",
+        "currency": "USD"
+    },
+    {
+        "name": "Pundi X",
+        "symbol": "NPXS",
+        "currency": "USD"
+    },
+    {
+        "name": "Zcash",
+        "symbol": "ZEC",
+        "currency": "USD"
+    },
+    {
+        "name": "PancakeSwap",
+        "symbol": "CAKE",
+        "currency": "USD"
+    },
+    {
+        "name": "Harmony",
+        "symbol": "ONE",
+        "currency": "USD"
+    },
+    {
+        "name": "Decentraland",
+        "symbol": "MANA",
+        "currency": "USD"
+    },
+    {
+        "name": "Nexo",
+        "symbol": "NEXO",
+        "currency": "USD"
+    },
+    {
+        "name": "UMA",
+        "symbol": "UMA",
+        "currency": "USD"
+    },
+    {
+        "name": "Ethereum Classic",
+        "symbol": "ETC",
+        "currency": "USD"
+    },
+    {
+        "name": "Bancor",
+        "symbol": "BNT",
+        "currency": "USD"
+    },
+    {
+        "name": "SwissBorg",
+        "symbol": "CHSB",
+        "currency": "USD"
+    },
+    {
+        "name": "THORChain",
+        "symbol": "RUNE",
+        "currency": "USD"
+    },
+    {
+        "name": "yearn.finance",
+        "symbol": "YFI",
+        "currency": "USD"
+    },
+    {
+        "name": "Holo",
+        "symbol": "HOT",
+        "currency": "USD"
+    },
+    {
+        "name": "Reserve Rights",
+        "symbol": "RSR",
+        "currency": "USD"
+    },
+    {
+        "name": "ICON",
+        "symbol": "ICX",
+        "currency": "USD"
+    },
+    {
+        "name": "Celsius",
+        "symbol": "CEL",
+        "currency": "USD"
+    },
+    {
+        "name": "0x",
+        "symbol": "ZRX",
+        "currency": "USD"
+    },
+    {
+        "name": "Waves",
+        "symbol": "WAVES",
+        "currency": "USD"
+    },
+    {
+        "name": "Fantom",
+        "symbol": "FTM",
+        "currency": "USD"
+    },
+    {
+        "name": "Ren",
+        "symbol": "REN",
+        "currency": "USD"
+    },
+    {
+        "name": "Siacoin",
+        "symbol": "SC",
+        "currency": "USD"
+    },
+    {
+        "name": "Revain",
+        "symbol": "REV",
+        "currency": "USD"
+    },
+    {
+        "name": "Voyager Token",
+        "symbol": "VGX",
+        "currency": "USD"
+    },
+    {
+        "name": "Ontology",
+        "symbol": "ONT",
+        "currency": "USD"
+    },
+    {
+        "name": "DigiByte",
+        "symbol": "DGB",
+        "currency": "USD"
+    },
+    {
+        "name": "Dent",
+        "symbol": "DENT",
+        "currency": "USD"
+    },
+    {
+        "name": "OKB",
+        "symbol": "OKB",
+        "currency": "USD"
+    },
+    {
+        "name": "IOST",
+        "symbol": "IOST",
+        "currency": "USD"
+    },
+    {
+        "name": "OMG Network",
+        "symbol": "OMG",
+        "currency": "USD"
+    },
+    {
+        "name": "Paxos Standard",
+        "symbol": "PAX",
+        "currency": "USD"
+    },
+    {
+        "name": "Celo",
+        "symbol": "CELO",
+        "currency": "USD"
+    },
+    {
+        "name": "1inch",
+        "symbol": "1INCH",
+        "currency": "USD"
+    },
+    {
+        "name": "Nano",
+        "symbol": "NANO",
+        "currency": "USD"
+    },
+    {
+        "name": "Nano",
+        "symbol": "NANO",
+        "currency": "USD"
+    },
+    {
+        "name": "Qtum",
+        "symbol": "QTUM",
+        "currency": "USD"
+    },
+    {
+        "name": "Loopring",
+        "symbol": "LRC",
+        "currency": "USD"
+    },
+    {
+        "name": "Ocean Protocol",
+        "symbol": "OCEAN",
+        "currency": "USD"
+    },
+    {
+        "name": "Curve DAO Token",
+        "symbol": "CRV",
+        "currency": "USD"
+    },
+    {
+        "name": "Kyber Network",
+        "symbol": "KNC",
+        "currency": "USD"
+    },
+    {
+        "name": "Horizen",
+        "symbol": "ZEN",
+        "currency": "USD"
+    },
+    {
+        "name": "MVL",
+        "symbol": "MVL",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin Gold",
+        "symbol": "BTG",
+        "currency": "USD"
+    },
+    {
+        "name": "Lisk",
+        "symbol": "LSK",
+        "currency": "USD"
+    },
+    {
+        "name": "Verge",
+        "symbol": "XVG",
+        "currency": "USD"
+    },
+    {
+        "name": "Fetch.ai",
+        "symbol": "FET",
+        "currency": "USD"
+    },
+    {
+        "name": "Energy Web Token",
+        "symbol": "EWT",
+        "currency": "USD"
+    },
+    {
+        "name": "Quant",
+        "symbol": "QNT",
+        "currency": "USD"
+    },
+    {
+        "name": "Ankr",
+        "symbol": "ANKR",
+        "currency": "USD"
+    },
+    {
+        "name": "Golem",
+        "symbol": "GLM",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitpanda Ecosystem Token",
+        "symbol": "BEST",
+        "currency": "USD"
+    },
+    {
+        "name": "Electroneum",
+        "symbol": "ETN",
+        "currency": "USD"
+    },
+    {
+        "name": "Celer Network",
+        "symbol": "CELR",
+        "currency": "USD"
+    },
+    {
+        "name": "StormX",
+        "symbol": "STMX",
+        "currency": "USD"
+    },
+    {
+        "name": "Augur",
+        "symbol": "REP",
+        "currency": "USD"
+    },
+    {
+        "name": "Mixin",
+        "symbol": "XIN",
+        "currency": "USD"
+    },
+    {
+        "name": "IoTeX",
+        "symbol": "IOTX",
+        "currency": "USD"
+    },
+    {
+        "name": "Venus",
+        "symbol": "XVS",
+        "currency": "USD"
+    },
+    {
+        "name": "FunFair",
+        "symbol": "FUN",
+        "currency": "USD"
+    },
+    {
+        "name": "Status",
+        "symbol": "SNT",
+        "currency": "USD"
+    },
+    {
+        "name": "WAX",
+        "symbol": "WAXP",
+        "currency": "USD"
+    },
+    {
+        "name": "Telcoin",
+        "symbol": "TEL",
+        "currency": "USD"
+    },
+    {
+        "name": "Kin",
+        "symbol": "KIN",
+        "currency": "USD"
+    },
+    {
+        "name": "COTI",
+        "symbol": "COTI",
+        "currency": "USD"
+    },
+    {
+        "name": "Stacks",
+        "symbol": "STX",
+        "currency": "USD"
+    },
+    {
+        "name": "Kava.io",
+        "symbol": "KAVA",
+        "currency": "USD"
+    },
+    {
+        "name": "Polymath",
+        "symbol": "POLY",
+        "currency": "USD"
+    },
+    {
+        "name": "Swipe",
+        "symbol": "SXP",
+        "currency": "USD"
+    },
+    {
+        "name": "MaidSafeCoin",
+        "symbol": "MAID",
+        "currency": "USD"
+    },
+    {
+        "name": "Civic",
+        "symbol": "CVC",
+        "currency": "USD"
+    },
+    {
+        "name": "TrueUSD",
+        "symbol": "TUSD",
+        "currency": "USD"
+    },
+    {
+        "name": "Band Protocol",
+        "symbol": "BAND",
+        "currency": "USD"
+    },
+    {
+        "name": "Ardor",
+        "symbol": "ARDR",
+        "currency": "USD"
+    },
+    {
+        "name": "Steem",
+        "symbol": "STEEM",
+        "currency": "USD"
+    },
+    {
+        "name": "Orchid",
+        "symbol": "OXT",
+        "currency": "USD"
+    },
+    {
+        "name": "Aragon",
+        "symbol": "ANT",
+        "currency": "USD"
+    },
+    {
+        "name": "QuarkChain",
+        "symbol": "QKC",
+        "currency": "USD"
+    },
+    {
+        "name": "OriginTrail",
+        "symbol": "TRAC",
+        "currency": "USD"
+    },
+    {
+        "name": "Utrust",
+        "symbol": "UTK",
+        "currency": "USD"
+    },
+    {
+        "name": "Serum",
+        "symbol": "SRM",
+        "currency": "USD"
+    },
+    {
+        "name": "MediBloc",
+        "symbol": "MED",
+        "currency": "USD"
+    },
+    {
+        "name": "Hifi Finance",
+        "symbol": "MFT",
+        "currency": "USD"
+    },
+    {
+        "name": "Storj",
+        "symbol": "STORJ",
+        "currency": "USD"
+    },
+    {
+        "name": "Origin Protocol",
+        "symbol": "OGN",
+        "currency": "USD"
+    },
+    {
+        "name": "BitShares",
+        "symbol": "BTS",
+        "currency": "USD"
+    },
+    {
+        "name": "Numeraire",
+        "symbol": "NMR",
+        "currency": "USD"
+    },
+    {
+        "name": "Komodo",
+        "symbol": "KMD",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin Diamond",
+        "symbol": "BCD",
+        "currency": "USD"
+    },
+    {
+        "name": "Ampleforth",
+        "symbol": "AMPL",
+        "currency": "USD"
+    },
+    {
+        "name": "SingularityNET",
+        "symbol": "AGI",
+        "currency": "USD"
+    },
+    {
+        "name": "Gnosis",
+        "symbol": "GNO",
+        "currency": "USD"
+    },
+    {
+        "name": "Stratis",
+        "symbol": "STRAX",
+        "currency": "USD"
+    },
+    {
+        "name": "Ark",
+        "symbol": "ARK",
+        "currency": "USD"
+    },
+    {
+        "name": "TomoChain",
+        "symbol": "TOMO",
+        "currency": "USD"
+    },
+    {
+        "name": "IRISnet",
+        "symbol": "IRIS",
+        "currency": "USD"
+    },
+    {
+        "name": "PAC Global",
+        "symbol": "PAC",
+        "currency": "USD"
+    },
+    {
+        "name": "Wanchain",
+        "symbol": "WAN",
+        "currency": "USD"
+    },
+    {
+        "name": "ABBC Coin",
+        "symbol": "ABBC",
+        "currency": "USD"
+    },
+    {
+        "name": "district0x",
+        "symbol": "DNT",
+        "currency": "USD"
+    },
+    {
+        "name": "aelf",
+        "symbol": "ELF",
+        "currency": "USD"
+    },
+    {
+        "name": "Syscoin",
+        "symbol": "SYS",
+        "currency": "USD"
+    },
+    {
+        "name": "ZB Token",
+        "symbol": "ZB",
+        "currency": "USD"
+    },
+    {
+        "name": "CyberVein",
+        "symbol": "CVT",
+        "currency": "USD"
+    },
+    {
+        "name": "iExec RLC",
+        "symbol": "RLC",
+        "currency": "USD"
+    },
+    {
+        "name": "Loom Network",
+        "symbol": "LOOM",
+        "currency": "USD"
+    },
+    {
+        "name": "Haven Protocol",
+        "symbol": "XHV",
+        "currency": "USD"
+    },
+    {
+        "name": "Power Ledger",
+        "symbol": "POWR",
+        "currency": "USD"
+    },
+    {
+        "name": "Unibright",
+        "symbol": "UBT",
+        "currency": "USD"
+    },
+    {
+        "name": "Hellenic Coin",
+        "symbol": "HNC",
+        "currency": "USD"
+    },
+    {
+        "name": "Populous",
+        "symbol": "PPT",
+        "currency": "USD"
+    },
+    {
+        "name": "Bytom",
+        "symbol": "BTM",
+        "currency": "USD"
+    },
+    {
+        "name": "AdEx Network",
+        "symbol": "ADX",
+        "currency": "USD"
+    },
+    {
+        "name": "Divi",
+        "symbol": "DIVI",
+        "currency": "USD"
+    },
+    {
+        "name": "Centrality",
+        "symbol": "CENNZ",
+        "currency": "USD"
+    },
+    {
+        "name": "Request",
+        "symbol": "REQ",
+        "currency": "USD"
+    },
+    {
+        "name": "EFFORCE",
+        "symbol": "WOZX",
+        "currency": "USD"
+    },
+    {
+        "name": "ReddCoin",
+        "symbol": "RDD",
+        "currency": "USD"
+    },
+    {
+        "name": "Aion",
+        "symbol": "AION",
+        "currency": "USD"
+    },
+    {
+        "name": "Gas",
+        "symbol": "GAS",
+        "currency": "USD"
+    },
+    {
+        "name": "Elastos",
+        "symbol": "ELA",
+        "currency": "USD"
+    },
+    {
+        "name": "LBRY Credits",
+        "symbol": "LBC",
+        "currency": "USD"
+    },
+    {
+        "name": "Energi",
+        "symbol": "NRG",
+        "currency": "USD"
+    },
+    {
+        "name": "Streamr",
+        "symbol": "DATA",
+        "currency": "USD"
+    },
+    {
+        "name": "MonaCoin",
+        "symbol": "MONA",
+        "currency": "USD"
+    },
+    {
+        "name": "WazirX",
+        "symbol": "WRX",
+        "currency": "USD"
+    },
+    {
+        "name": "Gemini Dollar",
+        "symbol": "GUSD",
+        "currency": "USD"
+    },
+    {
+        "name": "Metal",
+        "symbol": "MTL",
+        "currency": "USD"
+    },
+    {
+        "name": "Refereum",
+        "symbol": "RFR",
+        "currency": "USD"
+    },
+    {
+        "name": "Selfkey",
+        "symbol": "KEY",
+        "currency": "USD"
+    },
+    {
+        "name": "SOLVE",
+        "symbol": "SOLVE",
+        "currency": "USD"
+    },
+    {
+        "name": "Ignis",
+        "symbol": "IGNIS",
+        "currency": "USD"
+    },
+    {
+        "name": "Zenon",
+        "symbol": "ZNN",
+        "currency": "USD"
+    },
+    {
+        "name": "Nimiq",
+        "symbol": "NIM",
+        "currency": "USD"
+    },
+    {
+        "name": "Waltonchain",
+        "symbol": "WTC",
+        "currency": "USD"
+    },
+    {
+        "name": "NKN",
+        "symbol": "NKN",
+        "currency": "USD"
+    },
+    {
+        "name": "DREP",
+        "symbol": "DREP",
+        "currency": "USD"
+    },
+    {
+        "name": "Beam",
+        "symbol": "BEAM",
+        "currency": "USD"
+    },
+    {
+        "name": "Bytecoin",
+        "symbol": "BCN",
+        "currency": "USD"
+    },
+    {
+        "name": "Bluzelle",
+        "symbol": "BLZ",
+        "currency": "USD"
+    },
+    {
+        "name": "Cartesi",
+        "symbol": "CTSI",
+        "currency": "USD"
+    },
+    {
+        "name": "Sentinel Protocol",
+        "symbol": "UPP",
+        "currency": "USD"
+    },
+    {
+        "name": "Nexus",
+        "symbol": "NXS",
+        "currency": "USD"
+    },
+    {
+        "name": "KuCoin Shares",
+        "symbol": "KCS",
+        "currency": "USD"
+    },
+    {
+        "name": "Firo",
+        "symbol": "FIRO",
+        "currency": "USD"
+    },
+    {
+        "name": "ARPA Chain",
+        "symbol": "ARPA",
+        "currency": "USD"
+    },
+    {
+        "name": "AirSwap",
+        "symbol": "AST",
+        "currency": "USD"
+    },
+    {
+        "name": "Endor Protocol",
+        "symbol": "EDR",
+        "currency": "USD"
+    },
+    {
+        "name": "NULS",
+        "symbol": "NULS",
+        "currency": "USD"
+    },
+    {
+        "name": "Function X",
+        "symbol": "FX",
+        "currency": "USD"
+    },
+    {
+        "name": "WaykiChain",
+        "symbol": "WICC",
+        "currency": "USD"
+    },
+    {
+        "name": "PIVX",
+        "symbol": "PIVX",
+        "currency": "USD"
+    },
+    {
+        "name": "RChain",
+        "symbol": "REV",
+        "currency": "USD"
+    },
+    {
+        "name": "Constellation",
+        "symbol": "DAG",
+        "currency": "USD"
+    },
+    {
+        "name": "Switcheo",
+        "symbol": "SWTH",
+        "currency": "USD"
+    },
+    {
+        "name": "Phoenix Global",
+        "symbol": "PHB",
+        "currency": "USD"
+    },
+    {
+        "name": "Dragonchain",
+        "symbol": "DRGN",
+        "currency": "USD"
+    },
+    {
+        "name": "pNetwork",
+        "symbol": "PNT",
+        "currency": "USD"
+    },
+    {
+        "name": "Fusion",
+        "symbol": "FSN",
+        "currency": "USD"
+    },
+    {
+        "name": "Groestlcoin",
+        "symbol": "GRS",
+        "currency": "USD"
+    },
+    {
+        "name": "Quantstamp",
+        "symbol": "QSP",
+        "currency": "USD"
+    },
+    {
+        "name": "Cindicator",
+        "symbol": "CND",
+        "currency": "USD"
+    },
+    {
+        "name": "FIO Protocol",
+        "symbol": "FIO",
+        "currency": "USD"
+    },
+    {
+        "name": "Cortex",
+        "symbol": "CTXC",
+        "currency": "USD"
+    },
+    {
+        "name": "Ripio Credit Network",
+        "symbol": "RCN",
+        "currency": "USD"
+    },
+    {
+        "name": "Cocos-BCX",
+        "symbol": "COCOS",
+        "currency": "USD"
+    },
+    {
+        "name": "Sport and Leisure",
+        "symbol": "SNL",
+        "currency": "USD"
+    },
+    {
+        "name": "Measurable Data Token",
+        "symbol": "MDT",
+        "currency": "USD"
+    },
+    {
+        "name": "Einsteinium",
+        "symbol": "EMC2",
+        "currency": "USD"
+    },
+    {
+        "name": "v.systems",
+        "symbol": "VSYS",
+        "currency": "USD"
+    },
+    {
+        "name": "Aeternity",
+        "symbol": "AE",
+        "currency": "USD"
+    },
+    {
+        "name": "GameCredits",
+        "symbol": "GAME",
+        "currency": "USD"
+    },
+    {
+        "name": "Aurora",
+        "symbol": "AOA",
+        "currency": "USD"
+    },
+    {
+        "name": "Zap",
+        "symbol": "ZAP",
+        "currency": "USD"
+    },
+    {
+        "name": "GXChain",
+        "symbol": "GXC",
+        "currency": "USD"
+    },
+    {
+        "name": "VITE",
+        "symbol": "VITE",
+        "currency": "USD"
+    },
+    {
+        "name": "Enzyme Finance",
+        "symbol": "MLN",
+        "currency": "USD"
+    },
+    {
+        "name": "LockTrip",
+        "symbol": "LOC",
+        "currency": "USD"
+    },
+    {
+        "name": "Lympo",
+        "symbol": "LYM",
+        "currency": "USD"
+    },
+    {
+        "name": "STASIS EURO",
+        "symbol": "EURS",
+        "currency": "USD"
+    },
+    {
+        "name": "Dock",
+        "symbol": "DOCK",
+        "currency": "USD"
+    },
+    {
+        "name": "Kleros",
+        "symbol": "PNK",
+        "currency": "USD"
+    },
+    {
+        "name": "Nebulas",
+        "symbol": "NAS",
+        "currency": "USD"
+    },
+    {
+        "name": "GoChain",
+        "symbol": "GO",
+        "currency": "USD"
+    },
+    {
+        "name": "MCO",
+        "symbol": "MCO",
+        "currency": "USD"
+    },
+    {
+        "name": "Navcoin",
+        "symbol": "NAV",
+        "currency": "USD"
+    },
+    {
+        "name": "Propy",
+        "symbol": "PRO",
+        "currency": "USD"
+    },
+    {
+        "name": "Skycoin",
+        "symbol": "SKY",
+        "currency": "USD"
+    },
+    {
+        "name": "CasinoCoin",
+        "symbol": "CSC",
+        "currency": "USD"
+    },
+    {
+        "name": "Dentacoin",
+        "symbol": "DCN",
+        "currency": "USD"
+    },
+    {
+        "name": "HyperCash",
+        "symbol": "HC",
+        "currency": "USD"
+    },
+    {
+        "name": "BTU Protocol",
+        "symbol": "BTU",
+        "currency": "USD"
+    },
+    {
+        "name": "DMarket",
+        "symbol": "DMT",
+        "currency": "USD"
+    },
+    {
+        "name": "Mithril",
+        "symbol": "MITH",
+        "currency": "USD"
+    },
+    {
+        "name": "Nxt",
+        "symbol": "NXT",
+        "currency": "USD"
+    },
+    {
+        "name": "Phantasma",
+        "symbol": "SOUL",
+        "currency": "USD"
+    },
+    {
+        "name": "LATOKEN",
+        "symbol": "LA",
+        "currency": "USD"
+    },
+    {
+        "name": "0Chain",
+        "symbol": "ZCN",
+        "currency": "USD"
+    },
+    {
+        "name": "Steem Dollars",
+        "symbol": "SBD",
+        "currency": "USD"
+    },
+    {
+        "name": "Wirex Token",
+        "symbol": "WXT",
+        "currency": "USD"
+    },
+    {
+        "name": "Flexacoin",
+        "symbol": "FXC",
+        "currency": "USD"
+    },
+    {
+        "name": "Sentivate",
+        "symbol": "SNTVT",
+        "currency": "USD"
+    },
+    {
+        "name": "All Sports",
+        "symbol": "SOC",
+        "currency": "USD"
+    },
+    {
+        "name": "Neblio",
+        "symbol": "NEBL",
+        "currency": "USD"
+    },
+    {
+        "name": "Apollo Currency",
+        "symbol": "APL",
+        "currency": "USD"
+    },
+    {
+        "name": "Crypterium",
+        "symbol": "CRPT",
+        "currency": "USD"
+    },
+    {
+        "name": "Grin",
+        "symbol": "GRIN",
+        "currency": "USD"
+    },
+    {
+        "name": "Project Pai",
+        "symbol": "PAI",
+        "currency": "USD"
+    },
+    {
+        "name": "Presearch",
+        "symbol": "PRE",
+        "currency": "USD"
+    },
+    {
+        "name": "Vertcoin",
+        "symbol": "VTC",
+        "currency": "USD"
+    },
+    {
+        "name": "Wabi",
+        "symbol": "WABI",
+        "currency": "USD"
+    },
+    {
+        "name": "Veritaseum",
+        "symbol": "VERI",
+        "currency": "USD"
+    },
+    {
+        "name": "Nucleus Vision",
+        "symbol": "NCASH",
+        "currency": "USD"
+    },
+    {
+        "name": "Ambrosus",
+        "symbol": "AMB",
+        "currency": "USD"
+    },
+    {
+        "name": "TenX",
+        "symbol": "PAY",
+        "currency": "USD"
+    },
+    {
+        "name": "Raiden Network Token",
+        "symbol": "RDN",
+        "currency": "USD"
+    },
+    {
+        "name": "TokenClub",
+        "symbol": "TCT",
+        "currency": "USD"
+    },
+    {
+        "name": "BnkToTheFuture",
+        "symbol": "BFT",
+        "currency": "USD"
+    },
+    {
+        "name": "Bankera",
+        "symbol": "BNK",
+        "currency": "USD"
+    },
+    {
+        "name": "DigixDAO",
+        "symbol": "DGD",
+        "currency": "USD"
+    },
+    {
+        "name": "Dovu",
+        "symbol": "DOV",
+        "currency": "USD"
+    },
+    {
+        "name": "#MetaHash",
+        "symbol": "MHC",
+        "currency": "USD"
+    },
+    {
+        "name": "TE-FOOD",
+        "symbol": "TONE",
+        "currency": "USD"
+    },
+    {
+        "name": "Gifto",
+        "symbol": "GTO",
+        "currency": "USD"
+    },
+    {
+        "name": "PCHAIN",
+        "symbol": "PI",
+        "currency": "USD"
+    },
+    {
+        "name": "Circuits of Value",
+        "symbol": "COVAL",
+        "currency": "USD"
+    },
+    {
+        "name": "Credits",
+        "symbol": "CS",
+        "currency": "USD"
+    },
+    {
+        "name": "AppCoins",
+        "symbol": "APPC",
+        "currency": "USD"
+    },
+    {
+        "name": "Bread",
+        "symbol": "BRD",
+        "currency": "USD"
+    },
+    {
+        "name": "QASH",
+        "symbol": "QASH",
+        "currency": "USD"
+    },
+    {
+        "name": "Metronome",
+        "symbol": "MET",
+        "currency": "USD"
+    },
+    {
+        "name": "Genesis Vision",
+        "symbol": "GVT",
+        "currency": "USD"
+    },
+    {
+        "name": "OAX",
+        "symbol": "OAX",
+        "currency": "USD"
+    },
+    {
+        "name": "DeepBrain Chain",
+        "symbol": "DBC",
+        "currency": "USD"
+    },
+    {
+        "name": "Loki",
+        "symbol": "LOKI",
+        "currency": "USD"
+    },
+    {
+        "name": "High Performance Blockchain",
+        "symbol": "HPB",
+        "currency": "USD"
+    },
+    {
+        "name": "BABB",
+        "symbol": "BAX",
+        "currency": "USD"
+    },
+    {
+        "name": "Dero",
+        "symbol": "DERO",
+        "currency": "USD"
+    },
+    {
+        "name": "POA",
+        "symbol": "POA",
+        "currency": "USD"
+    },
+    {
+        "name": "SIRIN LABS Token",
+        "symbol": "SRN",
+        "currency": "USD"
+    },
+    {
+        "name": "Digitex Futures",
+        "symbol": "DGTX",
+        "currency": "USD"
+    },
+    {
+        "name": "QLC Chain",
+        "symbol": "QLC",
+        "currency": "USD"
+    },
+    {
+        "name": "LGO Token",
+        "symbol": "LGO",
+        "currency": "USD"
+    },
+    {
+        "name": "WePower",
+        "symbol": "WPR",
+        "currency": "USD"
+    },
+    {
+        "name": "Blox",
+        "symbol": "CDT",
+        "currency": "USD"
+    },
+    {
+        "name": "PumaPay",
+        "symbol": "PMA",
+        "currency": "USD"
+    },
+    {
+        "name": "Obyte",
+        "symbol": "GBYTE",
+        "currency": "USD"
+    },
+    {
+        "name": "Dynamic",
+        "symbol": "DYN",
+        "currency": "USD"
+    },
+    {
+        "name": "XYO",
+        "symbol": "XYO",
+        "currency": "USD"
+    },
+    {
+        "name": "Blocknet",
+        "symbol": "BLOCK",
+        "currency": "USD"
+    },
+    {
+        "name": "Buggyra Coin Zero",
+        "symbol": "BCZERO",
+        "currency": "USD"
+    },
+    {
+        "name": "Namecoin",
+        "symbol": "NMC",
+        "currency": "USD"
+    },
+    {
+        "name": "Moeda Loyalty Points",
+        "symbol": "MDA",
+        "currency": "USD"
+    },
+    {
+        "name": "Matrix AI Network",
+        "symbol": "MAN",
+        "currency": "USD"
+    },
+    {
+        "name": "SALT",
+        "symbol": "SALT",
+        "currency": "USD"
+    },
+    {
+        "name": "Quantum Resistant Ledger",
+        "symbol": "QRL",
+        "currency": "USD"
+    },
+    {
+        "name": "Cardstack",
+        "symbol": "CARD",
+        "currency": "USD"
+    },
+    {
+        "name": "CyberMiles",
+        "symbol": "CMT",
+        "currency": "USD"
+    },
+    {
+        "name": "TrueChain",
+        "symbol": "TRUE",
+        "currency": "USD"
+    },
+    {
+        "name": "Egretia",
+        "symbol": "EGT",
+        "currency": "USD"
+    },
+    {
+        "name": "Metaverse ETP",
+        "symbol": "ETP",
+        "currency": "USD"
+    },
+    {
+        "name": "Factom",
+        "symbol": "FCT",
+        "currency": "USD"
+    },
+    {
+        "name": "Maximine Coin",
+        "symbol": "MXM",
+        "currency": "USD"
+    },
+    {
+        "name": "Hydro Protocol",
+        "symbol": "HOT",
+        "currency": "USD"
+    },
+    {
+        "name": "Viacoin",
+        "symbol": "VIA",
+        "currency": "USD"
+    },
+    {
+        "name": "Everex",
+        "symbol": "EVX",
+        "currency": "USD"
+    },
+    {
+        "name": "YOYOW",
+        "symbol": "YOYOW",
+        "currency": "USD"
+    },
+    {
+        "name": "Viberate",
+        "symbol": "VIB",
+        "currency": "USD"
+    },
+    {
+        "name": "Tachyon Protocol",
+        "symbol": "IPX",
+        "currency": "USD"
+    },
+    {
+        "name": "Agrello",
+        "symbol": "DLT",
+        "currency": "USD"
+    },
+    {
+        "name": "MediShares",
+        "symbol": "MDS",
+        "currency": "USD"
+    },
+    {
+        "name": "Ruff",
+        "symbol": "RUFF",
+        "currency": "USD"
+    },
+    {
+        "name": "FLO",
+        "symbol": "FLO",
+        "currency": "USD"
+    },
+    {
+        "name": "ProximaX",
+        "symbol": "XPX",
+        "currency": "USD"
+    },
+    {
+        "name": "Monetha",
+        "symbol": "MTH",
+        "currency": "USD"
+    },
+    {
+        "name": "Achain",
+        "symbol": "ACT",
+        "currency": "USD"
+    },
+    {
+        "name": "SONM",
+        "symbol": "SNM",
+        "currency": "USD"
+    },
+    {
+        "name": "SingularDTV",
+        "symbol": "SNGLS",
+        "currency": "USD"
+    },
+    {
+        "name": "DigitalNote",
+        "symbol": "XDN",
+        "currency": "USD"
+    },
+    {
+        "name": "Arcblock",
+        "symbol": "ABT",
+        "currency": "USD"
+    },
+    {
+        "name": "PRIZM",
+        "symbol": "PZM",
+        "currency": "USD"
+    },
+    {
+        "name": "Ubiq",
+        "symbol": "UBQ",
+        "currency": "USD"
+    },
+    {
+        "name": "PressOne",
+        "symbol": "PRS",
+        "currency": "USD"
+    },
+    {
+        "name": "BLOCKv",
+        "symbol": "VEE",
+        "currency": "USD"
+    },
+    {
+        "name": "B2BX",
+        "symbol": "B2B",
+        "currency": "USD"
+    },
+    {
+        "name": "DATA",
+        "symbol": "DTA",
+        "currency": "USD"
+    },
+    {
+        "name": "Peercoin",
+        "symbol": "PPC",
+        "currency": "USD"
+    },
+    {
+        "name": "IQeon",
+        "symbol": "IQN",
+        "currency": "USD"
+    },
+    {
+        "name": "Banano",
+        "symbol": "BAN",
+        "currency": "USD"
+    },
+    {
+        "name": "THEKEY",
+        "symbol": "TKY",
+        "currency": "USD"
+    },
+    {
+        "name": "eBoost",
+        "symbol": "EBST",
+        "currency": "USD"
+    },
+    {
+        "name": "Santiment Network Token",
+        "symbol": "SAN",
+        "currency": "USD"
+    },
+    {
+        "name": "ROOBEE",
+        "symbol": "ROOBEE",
+        "currency": "USD"
+    },
+    {
+        "name": "Phore",
+        "symbol": "PHR",
+        "currency": "USD"
+    },
+    {
+        "name": "Genaro Network",
+        "symbol": "GNX",
+        "currency": "USD"
+    },
+    {
+        "name": "SmartMesh",
+        "symbol": "SMT",
+        "currency": "USD"
+    },
+    {
+        "name": "Essentia",
+        "symbol": "ESS",
+        "currency": "USD"
+    },
+    {
+        "name": "PlatonCoin",
+        "symbol": "PLTC",
+        "currency": "USD"
+    },
+    {
+        "name": "Callisto Network",
+        "symbol": "CLO",
+        "currency": "USD"
+    },
+    {
+        "name": "OneLedger",
+        "symbol": "OLT",
+        "currency": "USD"
+    },
+    {
+        "name": "Internxt",
+        "symbol": "INXT",
+        "currency": "USD"
+    },
+    {
+        "name": "Bibox Token",
+        "symbol": "BIX",
+        "currency": "USD"
+    },
+    {
+        "name": "Restart Energy MWAT",
+        "symbol": "MWAT",
+        "currency": "USD"
+    },
+    {
+        "name": "Stealthcoin",
+        "symbol": "XST",
+        "currency": "USD"
+    },
+    {
+        "name": "IoT Chain",
+        "symbol": "ITC",
+        "currency": "USD"
+    },
+    {
+        "name": "Seele-N",
+        "symbol": "SEELE",
+        "currency": "USD"
+    },
+    {
+        "name": "SwftCoin",
+        "symbol": "SWFTC",
+        "currency": "USD"
+    },
+    {
+        "name": "Monolith",
+        "symbol": "TKN",
+        "currency": "USD"
+    },
+    {
+        "name": "Peculium",
+        "symbol": "PCL",
+        "currency": "USD"
+    },
+    {
+        "name": "Odyssey",
+        "symbol": "OCN",
+        "currency": "USD"
+    },
+    {
+        "name": "Time New Bank",
+        "symbol": "TNB",
+        "currency": "USD"
+    },
+    {
+        "name": "DAOstack",
+        "symbol": "GEN",
+        "currency": "USD"
+    },
+    {
+        "name": "Pillar",
+        "symbol": "PLR",
+        "currency": "USD"
+    },
+    {
+        "name": "Covesting",
+        "symbol": "COV",
+        "currency": "USD"
+    },
+    {
+        "name": "carVertical",
+        "symbol": "CV",
+        "currency": "USD"
+    },
+    {
+        "name": "Qubitica",
+        "symbol": "QBIT",
+        "currency": "USD"
+    },
+    {
+        "name": "SmartCash",
+        "symbol": "SMART",
+        "currency": "USD"
+    },
+    {
+        "name": "Burst",
+        "symbol": "BURST",
+        "currency": "USD"
+    },
+    {
+        "name": "Spectre.ai Dividend Token",
+        "symbol": "SXDT",
+        "currency": "USD"
+    },
+    {
+        "name": "Tokenomy",
+        "symbol": "TEN",
+        "currency": "USD"
+    },
+    {
+        "name": "SpaceChain",
+        "symbol": "SPC",
+        "currency": "USD"
+    },
+    {
+        "name": "UCA Coin",
+        "symbol": "UCA",
+        "currency": "USD"
+    },
+    {
+        "name": "Particl",
+        "symbol": "PART",
+        "currency": "USD"
+    },
+    {
+        "name": "Mobius",
+        "symbol": "MOBI",
+        "currency": "USD"
+    },
+    {
+        "name": "Wings",
+        "symbol": "WINGS",
+        "currency": "USD"
+    },
+    {
+        "name": "Content Neutrality Network",
+        "symbol": "CNN",
+        "currency": "USD"
+    },
+    {
+        "name": "eBitcoin",
+        "symbol": "EBTC",
+        "currency": "USD"
+    },
+    {
+        "name": "Feathercoin",
+        "symbol": "FTC",
+        "currency": "USD"
+    },
+    {
+        "name": "Aeon",
+        "symbol": "AEON",
+        "currency": "USD"
+    },
+    {
+        "name": "Lightning Bitcoin",
+        "symbol": "LBTC",
+        "currency": "USD"
+    },
+    {
+        "name": "VIBE",
+        "symbol": "VIBE",
+        "currency": "USD"
+    },
+    {
+        "name": "Opacity",
+        "symbol": "OPCT",
+        "currency": "USD"
+    },
+    {
+        "name": "CPChain",
+        "symbol": "CPC",
+        "currency": "USD"
+    },
+    {
+        "name": "PotCoin",
+        "symbol": "POT",
+        "currency": "USD"
+    },
+    {
+        "name": "Lamden",
+        "symbol": "TAU",
+        "currency": "USD"
+    },
+    {
+        "name": "Mysterium",
+        "symbol": "MYST",
+        "currency": "USD"
+    },
+    {
+        "name": "Gulden",
+        "symbol": "NLG",
+        "currency": "USD"
+    },
+    {
+        "name": "Skrumble Network",
+        "symbol": "SKM",
+        "currency": "USD"
+    },
+    {
+        "name": "Credo",
+        "symbol": "CREDO",
+        "currency": "USD"
+    },
+    {
+        "name": "DOC.COM",
+        "symbol": "MTC",
+        "currency": "USD"
+    },
+    {
+        "name": "ERC20",
+        "symbol": "ERC20",
+        "currency": "USD"
+    },
+    {
+        "name": "EDUCare",
+        "symbol": "EKT",
+        "currency": "USD"
+    },
+    {
+        "name": "Game.com",
+        "symbol": "GTC",
+        "currency": "USD"
+    },
+    {
+        "name": "Remme",
+        "symbol": "REM",
+        "currency": "USD"
+    },
+    {
+        "name": "SunContract",
+        "symbol": "SNC",
+        "currency": "USD"
+    },
+    {
+        "name": "Cred",
+        "symbol": "LBA",
+        "currency": "USD"
+    },
+    {
+        "name": "INT",
+        "symbol": "INT",
+        "currency": "USD"
+    },
+    {
+        "name": "Myriad",
+        "symbol": "XMY",
+        "currency": "USD"
+    },
+    {
+        "name": "I/O Coin",
+        "symbol": "IOC",
+        "currency": "USD"
+    },
+    {
+        "name": "ContentBox",
+        "symbol": "BOX",
+        "currency": "USD"
+    },
+    {
+        "name": "LiteDoge",
+        "symbol": "LDOGE",
+        "currency": "USD"
+    },
+    {
+        "name": "Ivy",
+        "symbol": "IVY",
+        "currency": "USD"
+    },
+    {
+        "name": "Cappasity",
+        "symbol": "CAPP",
+        "currency": "USD"
+    },
+    {
+        "name": "Litecoin Cash",
+        "symbol": "LCC",
+        "currency": "USD"
+    },
+    {
+        "name": "Swarm",
+        "symbol": "SWM",
+        "currency": "USD"
+    },
+    {
+        "name": "DEX",
+        "symbol": "DEX",
+        "currency": "USD"
+    },
+    {
+        "name": "AXPR",
+        "symbol": "AXPR",
+        "currency": "USD"
+    },
+    {
+        "name": "Datum",
+        "symbol": "DAT",
+        "currency": "USD"
+    },
+    {
+        "name": "Investcoin",
+        "symbol": "INVC",
+        "currency": "USD"
+    },
+    {
+        "name": "Vexanium",
+        "symbol": "VEX",
+        "currency": "USD"
+    },
+    {
+        "name": "CryptoPing",
+        "symbol": "PING",
+        "currency": "USD"
+    },
+    {
+        "name": "DECOIN",
+        "symbol": "DTEP",
+        "currency": "USD"
+    },
+    {
+        "name": "Crown",
+        "symbol": "CRW",
+        "currency": "USD"
+    },
+    {
+        "name": "Acute Angle Cloud",
+        "symbol": "AAC",
+        "currency": "USD"
+    },
+    {
+        "name": "ChatCoin",
+        "symbol": "CHAT",
+        "currency": "USD"
+    },
+    {
+        "name": "BitGreen",
+        "symbol": "BITG",
+        "currency": "USD"
+    },
+    {
+        "name": "YEE",
+        "symbol": "YEE",
+        "currency": "USD"
+    },
+    {
+        "name": "Omni",
+        "symbol": "OMNI",
+        "currency": "USD"
+    },
+    {
+        "name": "BlackCoin",
+        "symbol": "BLK",
+        "currency": "USD"
+    },
+    {
+        "name": "ToaCoin",
+        "symbol": "TOA",
+        "currency": "USD"
+    },
+    {
+        "name": "EXRNchain",
+        "symbol": "EXRN",
+        "currency": "USD"
+    },
+    {
+        "name": "KickToken",
+        "symbol": "KICK",
+        "currency": "USD"
+    },
+    {
+        "name": "Gridcoin",
+        "symbol": "GRC",
+        "currency": "USD"
+    },
+    {
+        "name": "QunQun",
+        "symbol": "QUN",
+        "currency": "USD"
+    },
+    {
+        "name": "OKCash",
+        "symbol": "OK",
+        "currency": "USD"
+    },
+    {
+        "name": "CannabisCoin",
+        "symbol": "CANN",
+        "currency": "USD"
+    },
+    {
+        "name": "DAEX",
+        "symbol": "DAX",
+        "currency": "USD"
+    },
+    {
+        "name": "DMM: Governance",
+        "symbol": "DMG",
+        "currency": "USD"
+    },
+    {
+        "name": "Cube",
+        "symbol": "AUTO",
+        "currency": "USD"
+    },
+    {
+        "name": "Add.xyz",
+        "symbol": "PLT",
+        "currency": "USD"
+    },
+    {
+        "name": "Substratum",
+        "symbol": "SUB",
+        "currency": "USD"
+    },
+    {
+        "name": "Pinkcoin",
+        "symbol": "PINK",
+        "currency": "USD"
+    },
+    {
+        "name": "Alphacat",
+        "symbol": "ACAT",
+        "currency": "USD"
+    },
+    {
+        "name": "CoTrader",
+        "symbol": "COT",
+        "currency": "USD"
+    },
+    {
+        "name": "BitCapitalVendor",
+        "symbol": "BCV",
+        "currency": "USD"
+    },
+    {
+        "name": "DeepOnion",
+        "symbol": "ONION",
+        "currency": "USD"
+    },
+    {
+        "name": "Novacoin",
+        "symbol": "NVC",
+        "currency": "USD"
+    },
+    {
+        "name": "Primecoin",
+        "symbol": "XPM",
+        "currency": "USD"
+    },
+    {
+        "name": "OneRoot Network",
+        "symbol": "RNT",
+        "currency": "USD"
+    },
+    {
+        "name": "Energo",
+        "symbol": "TSL",
+        "currency": "USD"
+    },
+    {
+        "name": "Medicalchain",
+        "symbol": "MTN",
+        "currency": "USD"
+    },
+    {
+        "name": "Rialto",
+        "symbol": "XRL",
+        "currency": "USD"
+    },
+    {
+        "name": "Tierion",
+        "symbol": "TNT",
+        "currency": "USD"
+    },
+    {
+        "name": "VeriCoin",
+        "symbol": "VRC",
+        "currency": "USD"
+    },
+    {
+        "name": "BitcoinZ",
+        "symbol": "BTCZ",
+        "currency": "USD"
+    },
+    {
+        "name": "Enigma",
+        "symbol": "ENG",
+        "currency": "USD"
+    },
+    {
+        "name": "MyWish",
+        "symbol": "WISH",
+        "currency": "USD"
+    },
+    {
+        "name": "Blackmoon",
+        "symbol": "BMC",
+        "currency": "USD"
+    },
+    {
+        "name": "Patientory",
+        "symbol": "PTOY",
+        "currency": "USD"
+    },
+    {
+        "name": "Breezecoin",
+        "symbol": "BRZE",
+        "currency": "USD"
+    },
+    {
+        "name": "LuckChain",
+        "symbol": "BASH",
+        "currency": "USD"
+    },
+    {
+        "name": "Quark",
+        "symbol": "QRK",
+        "currency": "USD"
+    },
+    {
+        "name": "Pascal",
+        "symbol": "PASC",
+        "currency": "USD"
+    },
+    {
+        "name": "Plair",
+        "symbol": "PLA",
+        "currency": "USD"
+    },
+    {
+        "name": "Curecoin",
+        "symbol": "CURE",
+        "currency": "USD"
+    },
+    {
+        "name": "MobileGo",
+        "symbol": "MGO",
+        "currency": "USD"
+    },
+    {
+        "name": "Denarius",
+        "symbol": "D",
+        "currency": "USD"
+    },
+    {
+        "name": "Dimecoin",
+        "symbol": "DIME",
+        "currency": "USD"
+    },
+    {
+        "name": "IHT Real Estate Protocol",
+        "symbol": "IHT",
+        "currency": "USD"
+    },
+    {
+        "name": "CommerceBlock",
+        "symbol": "CBT",
+        "currency": "USD"
+    },
+    {
+        "name": "NuBits",
+        "symbol": "USNBT",
+        "currency": "USD"
+    },
+    {
+        "name": "Expanse",
+        "symbol": "EXP",
+        "currency": "USD"
+    },
+    {
+        "name": "Eternity",
+        "symbol": "ENT",
+        "currency": "USD"
+    },
+    {
+        "name": "AI Doctor",
+        "symbol": "AIDOC",
+        "currency": "USD"
+    },
+    {
+        "name": "HempCoin",
+        "symbol": "THC",
+        "currency": "USD"
+    },
+    {
+        "name": "HiCoin",
+        "symbol": "XHI",
+        "currency": "USD"
+    },
+    {
+        "name": "CEEK VR",
+        "symbol": "CEEK",
+        "currency": "USD"
+    },
+    {
+        "name": "ZClassic",
+        "symbol": "ZCL",
+        "currency": "USD"
+    },
+    {
+        "name": "TransferCoin",
+        "symbol": "TX",
+        "currency": "USD"
+    },
+    {
+        "name": "LUXCoin",
+        "symbol": "LUX",
+        "currency": "USD"
+    },
+    {
+        "name": "Rise",
+        "symbol": "RISE",
+        "currency": "USD"
+    },
+    {
+        "name": "Asch",
+        "symbol": "XAS",
+        "currency": "USD"
+    },
+    {
+        "name": "PayPie",
+        "symbol": "PPP",
+        "currency": "USD"
+    },
+    {
+        "name": "DAPS Coin",
+        "symbol": "DAPS",
+        "currency": "USD"
+    },
+    {
+        "name": "Giga Watt Token",
+        "symbol": "WTT",
+        "currency": "USD"
+    },
+    {
+        "name": "Bean Cash",
+        "symbol": "BITB",
+        "currency": "USD"
+    },
+    {
+        "name": "Primas",
+        "symbol": "PST",
+        "currency": "USD"
+    },
+    {
+        "name": "Bismuth",
+        "symbol": "BIS",
+        "currency": "USD"
+    },
+    {
+        "name": "LNX Protocol",
+        "symbol": "LNX",
+        "currency": "USD"
+    },
+    {
+        "name": "MonetaryUnit",
+        "symbol": "MUE",
+        "currency": "USD"
+    },
+    {
+        "name": "Sharder",
+        "symbol": "SS",
+        "currency": "USD"
+    },
+    {
+        "name": "Waves Community Token",
+        "symbol": "WCT",
+        "currency": "USD"
+    },
+    {
+        "name": "Zero",
+        "symbol": "ZER",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin Private",
+        "symbol": "BTCP",
+        "currency": "USD"
+    },
+    {
+        "name": "eosDAC",
+        "symbol": "EOSDAC",
+        "currency": "USD"
+    },
+    {
+        "name": "Aventus",
+        "symbol": "AVT",
+        "currency": "USD"
+    },
+    {
+        "name": "TrueFlip",
+        "symbol": "TFL",
+        "currency": "USD"
+    },
+    {
+        "name": "ATLANT",
+        "symbol": "ATL",
+        "currency": "USD"
+    },
+    {
+        "name": "FujiCoin",
+        "symbol": "FJC",
+        "currency": "USD"
+    },
+    {
+        "name": "BitBoost",
+        "symbol": "BBT",
+        "currency": "USD"
+    },
+    {
+        "name": "Banca",
+        "symbol": "BANCA",
+        "currency": "USD"
+    },
+    {
+        "name": "Renewable Electronic Energy Coin",
+        "symbol": "REEC",
+        "currency": "USD"
+    },
+    {
+        "name": "Xaurum",
+        "symbol": "XAUR",
+        "currency": "USD"
+    },
+    {
+        "name": "Hedge",
+        "symbol": "HDG",
+        "currency": "USD"
+    },
+    {
+        "name": "CoinFi",
+        "symbol": "COFI",
+        "currency": "USD"
+    },
+    {
+        "name": "0xBitcoin",
+        "symbol": "0xBTC",
+        "currency": "USD"
+    },
+    {
+        "name": "CloakCoin",
+        "symbol": "CLOAK",
+        "currency": "USD"
+    },
+    {
+        "name": "XTRABYTES",
+        "symbol": "XBY",
+        "currency": "USD"
+    },
+    {
+        "name": "EDC Blockchain",
+        "symbol": "EDC",
+        "currency": "USD"
+    },
+    {
+        "name": "TrezarCoin",
+        "symbol": "TZC",
+        "currency": "USD"
+    },
+    {
+        "name": "Capricoin+",
+        "symbol": "CPS",
+        "currency": "USD"
+    },
+    {
+        "name": "TraDove B2BCoin",
+        "symbol": "BBC",
+        "currency": "USD"
+    },
+    {
+        "name": "Humaniq",
+        "symbol": "HMQ",
+        "currency": "USD"
+    },
+    {
+        "name": "Bottos",
+        "symbol": "BTO",
+        "currency": "USD"
+    },
+    {
+        "name": "Maecenas",
+        "symbol": "ART",
+        "currency": "USD"
+    },
+    {
+        "name": "Mercury",
+        "symbol": "MER",
+        "currency": "USD"
+    },
+    {
+        "name": "Lunyr",
+        "symbol": "LUN",
+        "currency": "USD"
+    },
+    {
+        "name": "Megacoin",
+        "symbol": "MEC",
+        "currency": "USD"
+    },
+    {
+        "name": "GeoCoin",
+        "symbol": "GEO",
+        "currency": "USD"
+    },
+    {
+        "name": "FNKOS",
+        "symbol": "FNKOS",
+        "currency": "USD"
+    },
+    {
+        "name": "Adshares",
+        "symbol": "ADS",
+        "currency": "USD"
+    },
+    {
+        "name": "REAL",
+        "symbol": "REAL",
+        "currency": "USD"
+    },
+    {
+        "name": "Ixcoin",
+        "symbol": "IXC",
+        "currency": "USD"
+    },
+    {
+        "name": "ZrCoin",
+        "symbol": "ZRC",
+        "currency": "USD"
+    },
+    {
+        "name": "Carboncoin",
+        "symbol": "CARBON",
+        "currency": "USD"
+    },
+    {
+        "name": "The ChampCoin",
+        "symbol": "TCC",
+        "currency": "USD"
+    },
+    {
+        "name": "GPU Coin",
+        "symbol": "GPU",
+        "currency": "USD"
+    },
+    {
+        "name": "Dragon Coins",
+        "symbol": "DRG",
+        "currency": "USD"
+    },
+    {
+        "name": "GlobalBoost-Y",
+        "symbol": "BSTY",
+        "currency": "USD"
+    },
+    {
+        "name": "Etherparty",
+        "symbol": "FUEL",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin Plus",
+        "symbol": "XBC",
+        "currency": "USD"
+    },
+    {
+        "name": "Pakcoin",
+        "symbol": "PAK",
+        "currency": "USD"
+    },
+    {
+        "name": "DomRaider",
+        "symbol": "DRT",
+        "currency": "USD"
+    },
+    {
+        "name": "Trollcoin",
+        "symbol": "TROLL",
+        "currency": "USD"
+    },
+    {
+        "name": "Freicoin",
+        "symbol": "FRC",
+        "currency": "USD"
+    },
+    {
+        "name": "Pandacoin",
+        "symbol": "PND",
+        "currency": "USD"
+    },
+    {
+        "name": "adToken",
+        "symbol": "ADT",
+        "currency": "USD"
+    },
+    {
+        "name": "Boolberry",
+        "symbol": "BBR",
+        "currency": "USD"
+    },
+    {
+        "name": "Flixxo",
+        "symbol": "FLIXX",
+        "currency": "USD"
+    },
+    {
+        "name": "DECENT",
+        "symbol": "DCT",
+        "currency": "USD"
+    },
+    {
+        "name": "Brickblock",
+        "symbol": "BBK",
+        "currency": "USD"
+    },
+    {
+        "name": "Playkey",
+        "symbol": "PKT",
+        "currency": "USD"
+    },
+    {
+        "name": "Cosmo Coin",
+        "symbol": "COSM",
+        "currency": "USD"
+    },
+    {
+        "name": "LanaCoin",
+        "symbol": "LANA",
+        "currency": "USD"
+    },
+    {
+        "name": "IXT",
+        "symbol": "IXT",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin Atom",
+        "symbol": "BCA",
+        "currency": "USD"
+    },
+    {
+        "name": "ShipChain",
+        "symbol": "SHIP",
+        "currency": "USD"
+    },
+    {
+        "name": "EuropeCoin",
+        "symbol": "ERC",
+        "currency": "USD"
+    },
+    {
+        "name": "Stox",
+        "symbol": "STX",
+        "currency": "USD"
+    },
+    {
+        "name": "Bounty0x",
+        "symbol": "BNTY",
+        "currency": "USD"
+    },
+    {
+        "name": "Scry.info",
+        "symbol": "DDD",
+        "currency": "USD"
+    },
+    {
+        "name": "TokenPay",
+        "symbol": "TPAY",
+        "currency": "USD"
+    },
+    {
+        "name": "Neurotoken",
+        "symbol": "NTK",
+        "currency": "USD"
+    },
+    {
+        "name": "DDKoin",
+        "symbol": "DDK",
+        "currency": "USD"
+    },
+    {
+        "name": "SIBCoin",
+        "symbol": "SIB",
+        "currency": "USD"
+    },
+    {
+        "name": "FuzeX",
+        "symbol": "FXT",
+        "currency": "USD"
+    },
+    {
+        "name": "DubaiCoin",
+        "symbol": "DBIX",
+        "currency": "USD"
+    },
+    {
+        "name": "Electrify.Asia",
+        "symbol": "ELEC",
+        "currency": "USD"
+    },
+    {
+        "name": "HitCoin",
+        "symbol": "HTC",
+        "currency": "USD"
+    },
+    {
+        "name": "Bezant",
+        "symbol": "BZNT",
+        "currency": "USD"
+    },
+    {
+        "name": "Delphy",
+        "symbol": "DPY",
+        "currency": "USD"
+    },
+    {
+        "name": "ExclusiveCoin",
+        "symbol": "EXCL",
+        "currency": "USD"
+    },
+    {
+        "name": "Orbitcoin",
+        "symbol": "ORB",
+        "currency": "USD"
+    },
+    {
+        "name": "Ink",
+        "symbol": "INK",
+        "currency": "USD"
+    },
+    {
+        "name": "Indorse Token",
+        "symbol": "IND",
+        "currency": "USD"
+    },
+    {
+        "name": "Ormeus Coin",
+        "symbol": "ORMEUS",
+        "currency": "USD"
+    },
+    {
+        "name": "Shorty",
+        "symbol": "SHORTY",
+        "currency": "USD"
+    },
+    {
+        "name": "Edgeless",
+        "symbol": "EDG",
+        "currency": "USD"
+    },
+    {
+        "name": "Zeusshield",
+        "symbol": "ZSC",
+        "currency": "USD"
+    },
+    {
+        "name": "Winco",
+        "symbol": "WCO",
+        "currency": "USD"
+    },
+    {
+        "name": "Hiveterminal Token",
+        "symbol": "HVN",
+        "currency": "USD"
+    },
+    {
+        "name": "Hexx",
+        "symbol": "HXX",
+        "currency": "USD"
+    },
+    {
+        "name": "Blockmason Credit Protocol",
+        "symbol": "BCPT",
+        "currency": "USD"
+    },
+    {
+        "name": "Colossuscoin V2",
+        "symbol": "CV2",
+        "currency": "USD"
+    },
+    {
+        "name": "Chronobank",
+        "symbol": "TIME",
+        "currency": "USD"
+    },
+    {
+        "name": "Trinity Network Credit",
+        "symbol": "TNC",
+        "currency": "USD"
+    },
+    {
+        "name": "BitDegree",
+        "symbol": "BDG",
+        "currency": "USD"
+    },
+    {
+        "name": "Bezop",
+        "symbol": "BEZ",
+        "currency": "USD"
+    },
+    {
+        "name": "Rentberry",
+        "symbol": "BERRY",
+        "currency": "USD"
+    },
+    {
+        "name": "EventChain",
+        "symbol": "EVC",
+        "currency": "USD"
+    },
+    {
+        "name": "MetalCoin",
+        "symbol": "METAL",
+        "currency": "USD"
+    },
+    {
+        "name": "Hacken",
+        "symbol": "HKN",
+        "currency": "USD"
+    },
+    {
+        "name": "Ecobit",
+        "symbol": "ECOB",
+        "currency": "USD"
+    },
+    {
+        "name": "FlypMe",
+        "symbol": "FYP",
+        "currency": "USD"
+    },
+    {
+        "name": "Lendingblock",
+        "symbol": "LND",
+        "currency": "USD"
+    },
+    {
+        "name": "Bullion",
+        "symbol": "CBX",
+        "currency": "USD"
+    },
+    {
+        "name": "Friendz",
+        "symbol": "FDZ",
+        "currency": "USD"
+    },
+    {
+        "name": "Sakura Bloom",
+        "symbol": "SKB",
+        "currency": "USD"
+    },
+    {
+        "name": "GoldMint",
+        "symbol": "MNTP",
+        "currency": "USD"
+    },
+    {
+        "name": "Blue Protocol",
+        "symbol": "BLUE",
+        "currency": "USD"
+    },
+    {
+        "name": "MEXC Token",
+        "symbol": "MEXC",
+        "currency": "USD"
+    },
+    {
+        "name": "ATMChain",
+        "symbol": "ATM",
+        "currency": "USD"
+    },
+    {
+        "name": "Internet of People",
+        "symbol": "IOP",
+        "currency": "USD"
+    },
+    {
+        "name": "Po.et",
+        "symbol": "POE",
+        "currency": "USD"
+    },
+    {
+        "name": "BZEdge",
+        "symbol": "BZE",
+        "currency": "USD"
+    },
+    {
+        "name": "X8X Token",
+        "symbol": "X8X",
+        "currency": "USD"
+    },
+    {
+        "name": "HelloGold",
+        "symbol": "HGT",
+        "currency": "USD"
+    },
+    {
+        "name": "HeroNode",
+        "symbol": "HER",
+        "currency": "USD"
+    },
+    {
+        "name": "Pesetacoin",
+        "symbol": "PTC",
+        "currency": "USD"
+    },
+    {
+        "name": "Zennies",
+        "symbol": "ZENI",
+        "currency": "USD"
+    },
+    {
+        "name": "Ryo Currency",
+        "symbol": "RYO",
+        "currency": "USD"
+    },
+    {
+        "name": "AudioCoin",
+        "symbol": "ADC",
+        "currency": "USD"
+    },
+    {
+        "name": "Merebel",
+        "symbol": "MERI",
+        "currency": "USD"
+    },
+    {
+        "name": "Blocktix",
+        "symbol": "TIX",
+        "currency": "USD"
+    },
+    {
+        "name": "Primalbase Token",
+        "symbol": "PBT",
+        "currency": "USD"
+    },
+    {
+        "name": "MintMe.com Coin",
+        "symbol": "MINTME",
+        "currency": "USD"
+    },
+    {
+        "name": "Scorum Coins",
+        "symbol": "SCR",
+        "currency": "USD"
+    },
+    {
+        "name": "ChessCoin",
+        "symbol": "CHESS",
+        "currency": "USD"
+    },
+    {
+        "name": "Dropil",
+        "symbol": "DROP",
+        "currency": "USD"
+    },
+    {
+        "name": "MyBit",
+        "symbol": "MYB",
+        "currency": "USD"
+    },
+    {
+        "name": "Deutsche eMark",
+        "symbol": "DEM",
+        "currency": "USD"
+    },
+    {
+        "name": "Maxcoin",
+        "symbol": "MAX",
+        "currency": "USD"
+    },
+    {
+        "name": "CoinJanitor",
+        "symbol": "JAN",
+        "currency": "USD"
+    },
+    {
+        "name": "BUZZCoin",
+        "symbol": "BUZZ",
+        "currency": "USD"
+    },
+    {
+        "name": "Ethereum Meta",
+        "symbol": "ETHM",
+        "currency": "USD"
+    },
+    {
+        "name": "DreamTeam Token",
+        "symbol": "DREAM",
+        "currency": "USD"
+    },
+    {
+        "name": "Zeepin",
+        "symbol": "ZPT",
+        "currency": "USD"
+    },
+    {
+        "name": "Qbao",
+        "symbol": "QBT",
+        "currency": "USD"
+    },
+    {
+        "name": "Innova",
+        "symbol": "INN",
+        "currency": "USD"
+    },
+    {
+        "name": "Shadow Token",
+        "symbol": "SHDW",
+        "currency": "USD"
+    },
+    {
+        "name": "GoNetwork",
+        "symbol": "GOT",
+        "currency": "USD"
+    },
+    {
+        "name": "ShadowCash",
+        "symbol": "SDC",
+        "currency": "USD"
+    },
+    {
+        "name": "Neutron",
+        "symbol": "NTRN",
+        "currency": "USD"
+    },
+    {
+        "name": "Startcoin",
+        "symbol": "START",
+        "currency": "USD"
+    },
+    {
+        "name": "Synergy",
+        "symbol": "SNRG",
+        "currency": "USD"
+    },
+    {
+        "name": "Opus",
+        "symbol": "OPT",
+        "currency": "USD"
+    },
+    {
+        "name": "SwagBucks",
+        "symbol": "BUCKS",
+        "currency": "USD"
+    },
+    {
+        "name": "Streamity",
+        "symbol": "STM",
+        "currency": "USD"
+    },
+    {
+        "name": "Cryptonite",
+        "symbol": "XCN",
+        "currency": "USD"
+    },
+    {
+        "name": "Swap",
+        "symbol": "XWP",
+        "currency": "USD"
+    },
+    {
+        "name": "Fortuna",
+        "symbol": "FOTA",
+        "currency": "USD"
+    },
+    {
+        "name": "SHIELD",
+        "symbol": "XSH",
+        "currency": "USD"
+    },
+    {
+        "name": "GoByte",
+        "symbol": "GBX",
+        "currency": "USD"
+    },
+    {
+        "name": "Netko",
+        "symbol": "NETKO",
+        "currency": "USD"
+    },
+    {
+        "name": "InsaneCoin",
+        "symbol": "INSN",
+        "currency": "USD"
+    },
+    {
+        "name": "EncryptoTel [WAVES]",
+        "symbol": "ETT",
+        "currency": "USD"
+    },
+    {
+        "name": "Swing",
+        "symbol": "SWING",
+        "currency": "USD"
+    },
+    {
+        "name": "Digitalcoin",
+        "symbol": "DGC",
+        "currency": "USD"
+    },
+    {
+        "name": "WayGuide",
+        "symbol": "WAY",
+        "currency": "USD"
+    },
+    {
+        "name": "Energycoin",
+        "symbol": "ENRG",
+        "currency": "USD"
+    },
+    {
+        "name": "NANJCOIN",
+        "symbol": "NANJ",
+        "currency": "USD"
+    },
+    {
+        "name": "ION",
+        "symbol": "ION",
+        "currency": "USD"
+    },
+    {
+        "name": "Swarm City",
+        "symbol": "SWT",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitstar",
+        "symbol": "BITS",
+        "currency": "USD"
+    },
+    {
+        "name": "Graft",
+        "symbol": "GRFT",
+        "currency": "USD"
+    },
+    {
+        "name": "Starbase",
+        "symbol": "STAR",
+        "currency": "USD"
+    },
+    {
+        "name": "OracleChain",
+        "symbol": "OCT",
+        "currency": "USD"
+    },
+    {
+        "name": "Terracoin",
+        "symbol": "TRC",
+        "currency": "USD"
+    },
+    {
+        "name": "BlueCoin",
+        "symbol": "BLU",
+        "currency": "USD"
+    },
+    {
+        "name": "InvestFeed",
+        "symbol": "IFT",
+        "currency": "USD"
+    },
+    {
+        "name": "Aston",
+        "symbol": "ATX",
+        "currency": "USD"
+    },
+    {
+        "name": "Aeron",
+        "symbol": "ARNX",
+        "currency": "USD"
+    },
+    {
+        "name": "Ellaism",
+        "symbol": "ELLA",
+        "currency": "USD"
+    },
+    {
+        "name": "BitTokens",
+        "symbol": "BXT",
+        "currency": "USD"
+    },
+    {
+        "name": "iEthereum",
+        "symbol": "IETH",
+        "currency": "USD"
+    },
+    {
+        "name": "CryptoCarbon",
+        "symbol": "CCRB",
+        "currency": "USD"
+    },
+    {
+        "name": "2GIVE",
+        "symbol": "2GIVE",
+        "currency": "USD"
+    },
+    {
+        "name": "Happycoin",
+        "symbol": "HPC",
+        "currency": "USD"
+    },
+    {
+        "name": "Silverway",
+        "symbol": "SLV",
+        "currency": "USD"
+    },
+    {
+        "name": "SafeInsure",
+        "symbol": "SINS",
+        "currency": "USD"
+    },
+    {
+        "name": "GCN Coin",
+        "symbol": "GCN",
+        "currency": "USD"
+    },
+    {
+        "name": "WMCoin",
+        "symbol": "WMC",
+        "currency": "USD"
+    },
+    {
+        "name": "Quantis Network",
+        "symbol": "QUAN",
+        "currency": "USD"
+    },
+    {
+        "name": "SproutsExtreme",
+        "symbol": "SPEX",
+        "currency": "USD"
+    },
+    {
+        "name": "DopeCoin",
+        "symbol": "DOPE",
+        "currency": "USD"
+    },
+    {
+        "name": "Aigang",
+        "symbol": "AIX",
+        "currency": "USD"
+    },
+    {
+        "name": "IslaCoin",
+        "symbol": "ISL",
+        "currency": "USD"
+    },
+    {
+        "name": "Hackspace Capital",
+        "symbol": "HAC",
+        "currency": "USD"
+    },
+    {
+        "name": "Jetcoin",
+        "symbol": "JET",
+        "currency": "USD"
+    },
+    {
+        "name": "Kobocoin",
+        "symbol": "KOBO",
+        "currency": "USD"
+    },
+    {
+        "name": "Silent Notary",
+        "symbol": "SNTR",
+        "currency": "USD"
+    },
+    {
+        "name": "MicroMoney",
+        "symbol": "AMM",
+        "currency": "USD"
+    },
+    {
+        "name": "TagCoin",
+        "symbol": "TAG",
+        "currency": "USD"
+    },
+    {
+        "name": "Coin Lion",
+        "symbol": "LION",
+        "currency": "USD"
+    },
+    {
+        "name": "Pirl",
+        "symbol": "PIRL",
+        "currency": "USD"
+    },
+    {
+        "name": "Chronologic",
+        "symbol": "DAY",
+        "currency": "USD"
+    },
+    {
+        "name": "Cobinhood",
+        "symbol": "COB",
+        "currency": "USD"
+    },
+    {
+        "name": "Tattoocoin (Standard Edition)",
+        "symbol": "TSE",
+        "currency": "USD"
+    },
+    {
+        "name": "Cryptojacks",
+        "symbol": "CJ",
+        "currency": "USD"
+    },
+    {
+        "name": "Photon",
+        "symbol": "PHO",
+        "currency": "USD"
+    },
+    {
+        "name": "Motocoin",
+        "symbol": "MOTO",
+        "currency": "USD"
+    },
+    {
+        "name": "SRCOIN",
+        "symbol": "SRCOIN",
+        "currency": "USD"
+    },
+    {
+        "name": "Ties.DB",
+        "symbol": "TIE",
+        "currency": "USD"
+    },
+    {
+        "name": "Leadcoin",
+        "symbol": "LDC",
+        "currency": "USD"
+    },
+    {
+        "name": "Nicash",
+        "symbol": "NICASH",
+        "currency": "USD"
+    },
+    {
+        "name": "Opal",
+        "symbol": "OPAL",
+        "currency": "USD"
+    },
+    {
+        "name": "ParallelCoin",
+        "symbol": "DUO",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcurrency",
+        "symbol": "BTCR",
+        "currency": "USD"
+    },
+    {
+        "name": "AquariusCoin",
+        "symbol": "ARCO",
+        "currency": "USD"
+    },
+    {
+        "name": "FoldingCoin",
+        "symbol": "FLDC",
+        "currency": "USD"
+    },
+    {
+        "name": "SkinCoin",
+        "symbol": "SKIN",
+        "currency": "USD"
+    },
+    {
+        "name": "Mao Zedong",
+        "symbol": "MAO",
+        "currency": "USD"
+    },
+    {
+        "name": "REOSC",
+        "symbol": "REOSC",
+        "currency": "USD"
+    },
+    {
+        "name": "imbrex",
+        "symbol": "REX",
+        "currency": "USD"
+    },
+    {
+        "name": "GINcoin",
+        "symbol": "GIN",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcloud",
+        "symbol": "BTDX",
+        "currency": "USD"
+    },
+    {
+        "name": "Magi",
+        "symbol": "XMG",
+        "currency": "USD"
+    },
+    {
+        "name": "OptiToken",
+        "symbol": "OPTI",
+        "currency": "USD"
+    },
+    {
+        "name": "Emerald Crypto",
+        "symbol": "EMD",
+        "currency": "USD"
+    },
+    {
+        "name": "Guncoin",
+        "symbol": "GUN",
+        "currency": "USD"
+    },
+    {
+        "name": "Storiqa",
+        "symbol": "STQ",
+        "currency": "USD"
+    },
+    {
+        "name": "Proton Token",
+        "symbol": "PTT",
+        "currency": "USD"
+    },
+    {
+        "name": "Dynamite",
+        "symbol": "DYNMT",
+        "currency": "USD"
+    },
+    {
+        "name": "DraftCoin",
+        "symbol": "DFT",
+        "currency": "USD"
+    },
+    {
+        "name": "Elacoin",
+        "symbol": "ELC",
+        "currency": "USD"
+    },
+    {
+        "name": "KekCoin",
+        "symbol": "KEK",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitz",
+        "symbol": "BITZ",
+        "currency": "USD"
+    },
+    {
+        "name": "SuperCoin",
+        "symbol": "SUPER",
+        "currency": "USD"
+    },
+    {
+        "name": "vSlice",
+        "symbol": "VSL",
+        "currency": "USD"
+    },
+    {
+        "name": "PosEx",
+        "symbol": "PEX",
+        "currency": "USD"
+    },
+    {
+        "name": "PoSW Coin",
+        "symbol": "POSW",
+        "currency": "USD"
+    },
+    {
+        "name": "EvenCoin",
+        "symbol": "EVN",
+        "currency": "USD"
+    },
+    {
+        "name": "Adzcoin",
+        "symbol": "ADZ",
+        "currency": "USD"
+    },
+    {
+        "name": "BitBar",
+        "symbol": "BTB",
+        "currency": "USD"
+    },
+    {
+        "name": "Truegame",
+        "symbol": "TGAME",
+        "currency": "USD"
+    },
+    {
+        "name": "Evil Coin",
+        "symbol": "EVIL",
+        "currency": "USD"
+    },
+    {
+        "name": "Crowd Machine",
+        "symbol": "CMCT",
+        "currency": "USD"
+    },
+    {
+        "name": "Verify",
+        "symbol": "CRED",
+        "currency": "USD"
+    },
+    {
+        "name": "Worldcore",
+        "symbol": "WRC",
+        "currency": "USD"
+    },
+    {
+        "name": "Nasdacoin",
+        "symbol": "NSD",
+        "currency": "USD"
+    },
+    {
+        "name": "Monkey Project",
+        "symbol": "MONK",
+        "currency": "USD"
+    },
+    {
+        "name": "Bata",
+        "symbol": "BTA",
+        "currency": "USD"
+    },
+    {
+        "name": "KushCoin",
+        "symbol": "KUSH",
+        "currency": "USD"
+    },
+    {
+        "name": "Yacoin",
+        "symbol": "YAC",
+        "currency": "USD"
+    },
+    {
+        "name": "PopularCoin",
+        "symbol": "POP",
+        "currency": "USD"
+    },
+    {
+        "name": "OctoCoin",
+        "symbol": "888",
+        "currency": "USD"
+    },
+    {
+        "name": "VULCANO",
+        "symbol": "VULC",
+        "currency": "USD"
+    },
+    {
+        "name": "TEAM (TokenStars)",
+        "symbol": "TEAM",
+        "currency": "USD"
+    },
+    {
+        "name": "Sling",
+        "symbol": "SLING",
+        "currency": "USD"
+    },
+    {
+        "name": "Firecoin",
+        "symbol": "FIRE",
+        "currency": "USD"
+    },
+    {
+        "name": "Crave",
+        "symbol": "CRAVE",
+        "currency": "USD"
+    },
+    {
+        "name": "BitWhite",
+        "symbol": "BTW",
+        "currency": "USD"
+    },
+    {
+        "name": "Litecoin Plus",
+        "symbol": "LCP",
+        "currency": "USD"
+    },
+    {
+        "name": "MojoCoin",
+        "symbol": "MOJO",
+        "currency": "USD"
+    },
+    {
+        "name": "Rimbit",
+        "symbol": "RBT",
+        "currency": "USD"
+    },
+    {
+        "name": "Mineum",
+        "symbol": "MNM",
+        "currency": "USD"
+    },
+    {
+        "name": "Joulecoin",
+        "symbol": "XJO",
+        "currency": "USD"
+    },
+    {
+        "name": "BlockCAT",
+        "symbol": "CAT",
+        "currency": "USD"
+    },
+    {
+        "name": "Zetacoin",
+        "symbol": "ZET",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin Zero",
+        "symbol": "BZX",
+        "currency": "USD"
+    },
+    {
+        "name": "Franko",
+        "symbol": "FRK",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin Interest",
+        "symbol": "BCI",
+        "currency": "USD"
+    },
+    {
+        "name": "Bolivarcoin",
+        "symbol": "BOLI",
+        "currency": "USD"
+    },
+    {
+        "name": "Bela",
+        "symbol": "BELA",
+        "currency": "USD"
+    },
+    {
+        "name": "GameBet Coin",
+        "symbol": "GBT",
+        "currency": "USD"
+    },
+    {
+        "name": "Ultimate Secure Cash",
+        "symbol": "USC",
+        "currency": "USD"
+    },
+    {
+        "name": "Rubies",
+        "symbol": "RBIES",
+        "currency": "USD"
+    },
+    {
+        "name": "FirstCoin",
+        "symbol": "FRST",
+        "currency": "USD"
+    },
+    {
+        "name": "Eroscoin",
+        "symbol": "ERO",
+        "currency": "USD"
+    },
+    {
+        "name": "Kurrent",
+        "symbol": "KURT",
+        "currency": "USD"
+    },
+    {
+        "name": "Ratecoin",
+        "symbol": "XRA",
+        "currency": "USD"
+    },
+    {
+        "name": "Unitus",
+        "symbol": "UIS",
+        "currency": "USD"
+    },
+    {
+        "name": "Xios",
+        "symbol": "XIOS",
+        "currency": "USD"
+    },
+    {
+        "name": "Prime-Ex Perpetual",
+        "symbol": "PEXT",
+        "currency": "USD"
+    },
+    {
+        "name": "PX",
+        "symbol": "PX",
+        "currency": "USD"
+    },
+    {
+        "name": "SteepCoin",
+        "symbol": "STEEP",
+        "currency": "USD"
+    },
+    {
+        "name": "BillaryCoin",
+        "symbol": "BLRY",
+        "currency": "USD"
+    },
+    {
+        "name": "Universe",
+        "symbol": "UNI",
+        "currency": "USD"
+    },
+    {
+        "name": "Unify",
+        "symbol": "UNIFY",
+        "currency": "USD"
+    },
+    {
+        "name": "GuccioneCoin",
+        "symbol": "GCC",
+        "currency": "USD"
+    },
+    {
+        "name": "Privatix",
+        "symbol": "PRIX",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin Red",
+        "symbol": "BTCRED",
+        "currency": "USD"
+    },
+    {
+        "name": "Mchain",
+        "symbol": "MAR",
+        "currency": "USD"
+    },
+    {
+        "name": "Coin2.1",
+        "symbol": "C2",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitzeny",
+        "symbol": "ZNY",
+        "currency": "USD"
+    },
+    {
+        "name": "Rupee",
+        "symbol": "RUP",
+        "currency": "USD"
+    },
+    {
+        "name": "BeaverCoin",
+        "symbol": "BVC",
+        "currency": "USD"
+    },
+    {
+        "name": "BERNcash",
+        "symbol": "BERN",
+        "currency": "USD"
+    },
+    {
+        "name": "Spots",
+        "symbol": "SPT",
+        "currency": "USD"
+    },
+    {
+        "name": "Niobio Cash",
+        "symbol": "NBR",
+        "currency": "USD"
+    },
+    {
+        "name": "iTicoin",
+        "symbol": "ITI",
+        "currency": "USD"
+    },
+    {
+        "name": "WARP",
+        "symbol": "WARP",
+        "currency": "USD"
+    },
+    {
+        "name": "Universal Currency",
+        "symbol": "UNIT",
+        "currency": "USD"
+    },
+    {
+        "name": "LiteBar",
+        "symbol": "LTB",
+        "currency": "USD"
+    },
+    {
+        "name": "ATBCoin",
+        "symbol": "ATB",
+        "currency": "USD"
+    },
+    {
+        "name": "PureVidz",
+        "symbol": "VIDZ",
+        "currency": "USD"
+    },
+    {
+        "name": "GlobalToken",
+        "symbol": "GLT",
+        "currency": "USD"
+    },
+    {
+        "name": "Syndicate",
+        "symbol": "SYNX",
+        "currency": "USD"
+    },
+    {
+        "name": "SmartCoin",
+        "symbol": "SMC",
+        "currency": "USD"
+    },
+    {
+        "name": "ELTCOIN",
+        "symbol": "ELTCOIN",
+        "currency": "USD"
+    },
+    {
+        "name": "Paragon",
+        "symbol": "PRG",
+        "currency": "USD"
+    },
+    {
+        "name": "Miners' Reward Token",
+        "symbol": "MRT",
+        "currency": "USD"
+    },
+    {
+        "name": "GoldBlocks",
+        "symbol": "GB",
+        "currency": "USD"
+    },
+    {
+        "name": "Suretly",
+        "symbol": "SUR",
+        "currency": "USD"
+    },
+    {
+        "name": "Onix",
+        "symbol": "ONX",
+        "currency": "USD"
+    },
+    {
+        "name": "ICOBID",
+        "symbol": "ICOB",
+        "currency": "USD"
+    },
+    {
+        "name": "Global Currency Reserve",
+        "symbol": "GCR",
+        "currency": "USD"
+    },
+    {
+        "name": "Ethereum Cash",
+        "symbol": "ECASH",
+        "currency": "USD"
+    },
+    {
+        "name": "Digital Money Bits",
+        "symbol": "DMB",
+        "currency": "USD"
+    },
+    {
+        "name": "Blakecoin",
+        "symbol": "BLC",
+        "currency": "USD"
+    },
+    {
+        "name": "Acoin",
+        "symbol": "ACOIN",
+        "currency": "USD"
+    },
+    {
+        "name": "GlobalCoin",
+        "symbol": "GLCn",
+        "currency": "USD"
+    },
+    {
+        "name": "Theresa May Coin",
+        "symbol": "MAY",
+        "currency": "USD"
+    },
+    {
+        "name": "TrumpCoin",
+        "symbol": "TRUMP",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitradio",
+        "symbol": "BRO",
+        "currency": "USD"
+    },
+    {
+        "name": "Shilling",
+        "symbol": "SH",
+        "currency": "USD"
+    },
+    {
+        "name": "PostCoin",
+        "symbol": "POST",
+        "currency": "USD"
+    },
+    {
+        "name": "Metal Music Coin",
+        "symbol": "MTLMC3",
+        "currency": "USD"
+    },
+    {
+        "name": "TEKcoin",
+        "symbol": "TEK",
+        "currency": "USD"
+    },
+    {
+        "name": "Cream",
+        "symbol": "CRM",
+        "currency": "USD"
+    },
+    {
+        "name": "VIP Tokens",
+        "symbol": "VIP",
+        "currency": "USD"
+    },
+    {
+        "name": "Zurcoin",
+        "symbol": "ZUR",
+        "currency": "USD"
+    },
+    {
+        "name": "Uro",
+        "symbol": "URO",
+        "currency": "USD"
+    },
+    {
+        "name": "Atonomi",
+        "symbol": "ATMI",
+        "currency": "USD"
+    },
+    {
+        "name": "FuzzBalls",
+        "symbol": "FUZZ",
+        "currency": "USD"
+    },
+    {
+        "name": "Regalcoin",
+        "symbol": "REC",
+        "currency": "USD"
+    },
+    {
+        "name": "Wild Crypto",
+        "symbol": "WILD",
+        "currency": "USD"
+    },
+    {
+        "name": "Debitcoin",
+        "symbol": "DBTC",
+        "currency": "USD"
+    },
+    {
+        "name": "MindCoin",
+        "symbol": "MND",
+        "currency": "USD"
+    },
+    {
+        "name": "Dreamcoin",
+        "symbol": "DRM",
+        "currency": "USD"
+    },
+    {
+        "name": "Centurion",
+        "symbol": "CNT",
+        "currency": "USD"
+    },
+    {
+        "name": "Moin",
+        "symbol": "MOIN",
+        "currency": "USD"
+    },
+    {
+        "name": "CryCash",
+        "symbol": "CRC",
+        "currency": "USD"
+    },
+    {
+        "name": "Unrealcoin",
+        "symbol": "URC",
+        "currency": "USD"
+    },
+    {
+        "name": "XGOX",
+        "symbol": "XGOX",
+        "currency": "USD"
+    },
+    {
+        "name": "Signatum",
+        "symbol": "SIGT",
+        "currency": "USD"
+    },
+    {
+        "name": "iBTC",
+        "symbol": "IBTC",
+        "currency": "USD"
+    },
+    {
+        "name": "EDRCoin",
+        "symbol": "EDRC",
+        "currency": "USD"
+    },
+    {
+        "name": "Beatcoin",
+        "symbol": "XBTS",
+        "currency": "USD"
+    },
+    {
+        "name": "GeyserCoin",
+        "symbol": "GSR",
+        "currency": "USD"
+    },
+    {
+        "name": "Sativacoin",
+        "symbol": "STV",
+        "currency": "USD"
+    },
+    {
+        "name": "TOKYO",
+        "symbol": "TOKC",
+        "currency": "USD"
+    },
+    {
+        "name": "Influxcoin",
+        "symbol": "INFX",
+        "currency": "USD"
+    },
+    {
+        "name": "Ride My Car",
+        "symbol": "RIDE",
+        "currency": "USD"
+    },
+    {
+        "name": "Orlycoin",
+        "symbol": "ORLY",
+        "currency": "USD"
+    },
+    {
+        "name": "PayCoin",
+        "symbol": "XPY",
+        "currency": "USD"
+    },
+    {
+        "name": "Save and Gain",
+        "symbol": "SANDG",
+        "currency": "USD"
+    },
+    {
+        "name": "Jewels",
+        "symbol": "JWL",
+        "currency": "USD"
+    },
+    {
+        "name": "Braincoin",
+        "symbol": "BRAIN",
+        "currency": "USD"
+    },
+    {
+        "name": "LetItRide",
+        "symbol": "LIR",
+        "currency": "USD"
+    },
+    {
+        "name": "ParkByte",
+        "symbol": "PKB",
+        "currency": "USD"
+    },
+    {
+        "name": "GoldPieces",
+        "symbol": "GP",
+        "currency": "USD"
+    },
+    {
+        "name": "MustangCoin",
+        "symbol": "MST",
+        "currency": "USD"
+    },
+    {
+        "name": "AmsterdamCoin",
+        "symbol": "AMS",
+        "currency": "USD"
+    },
+    {
+        "name": "PayCon",
+        "symbol": "CON",
+        "currency": "USD"
+    },
+    {
+        "name": "PRiVCY",
+        "symbol": "PRIV",
+        "currency": "USD"
+    },
+    {
+        "name": "X-Coin",
+        "symbol": "XCO",
+        "currency": "USD"
+    },
+    {
+        "name": "BitRent",
+        "symbol": "RNTB",
+        "currency": "USD"
+    },
+    {
+        "name": "Matchpool",
+        "symbol": "GUP",
+        "currency": "USD"
+    },
+    {
+        "name": "RonPaulCoin",
+        "symbol": "RPC",
+        "currency": "USD"
+    },
+    {
+        "name": "MarteXcoin",
+        "symbol": "MXT",
+        "currency": "USD"
+    },
+    {
+        "name": "Elementrem",
+        "symbol": "ELE",
+        "currency": "USD"
+    },
+    {
+        "name": "PIECoin",
+        "symbol": "PIE",
+        "currency": "USD"
+    },
+    {
+        "name": "DNotes",
+        "symbol": "NOTE",
+        "currency": "USD"
+    },
+    {
+        "name": "ARBITRAGE",
+        "symbol": "ARB",
+        "currency": "USD"
+    },
+    {
+        "name": "SpreadCoin",
+        "symbol": "SPR",
+        "currency": "USD"
+    },
+    {
+        "name": "Zonecoin",
+        "symbol": "ZNE",
+        "currency": "USD"
+    },
+    {
+        "name": "BowsCoin",
+        "symbol": "BSC",
+        "currency": "USD"
+    },
+    {
+        "name": "Californium",
+        "symbol": "CF",
+        "currency": "USD"
+    },
+    {
+        "name": "ARbit",
+        "symbol": "ARB",
+        "currency": "USD"
+    },
+    {
+        "name": "Thore Cash",
+        "symbol": "TCH",
+        "currency": "USD"
+    },
+    {
+        "name": "OsmiumCoin",
+        "symbol": "OS76",
+        "currency": "USD"
+    },
+    {
+        "name": "JobsCoin",
+        "symbol": "JOBS",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin 21",
+        "symbol": "XBTC21",
+        "currency": "USD"
+    },
+    {
+        "name": "Desire",
+        "symbol": "DSR",
+        "currency": "USD"
+    },
+    {
+        "name": "Visio",
+        "symbol": "VISIO",
+        "currency": "USD"
+    },
+    {
+        "name": "SydPak",
+        "symbol": "SDP",
+        "currency": "USD"
+    },
+    {
+        "name": "Xonecoin",
+        "symbol": "XOC",
+        "currency": "USD"
+    },
+    {
+        "name": "Zayedcoin",
+        "symbol": "ZYD",
+        "currency": "USD"
+    },
+    {
+        "name": "ImpulseCoin",
+        "symbol": "IMPS",
+        "currency": "USD"
+    },
+    {
+        "name": "BROTHER",
+        "symbol": "BRAT",
+        "currency": "USD"
+    },
+    {
+        "name": "CrevaCoin",
+        "symbol": "CREVA",
+        "currency": "USD"
+    },
+    {
+        "name": "Rupaya",
+        "symbol": "RUPX",
+        "currency": "USD"
+    },
+    {
+        "name": "Quebecoin",
+        "symbol": "QBC",
+        "currency": "USD"
+    },
+    {
+        "name": "HOdlcoin",
+        "symbol": "HODL",
+        "currency": "USD"
+    },
+    {
+        "name": "SongCoin",
+        "symbol": "SONG",
+        "currency": "USD"
+    },
+    {
+        "name": "Titcoin",
+        "symbol": "TIT",
+        "currency": "USD"
+    },
+    {
+        "name": "Destiny",
+        "symbol": "DES",
+        "currency": "USD"
+    },
+    {
+        "name": "Taler Coin",
+        "symbol": "TLR",
+        "currency": "USD"
+    },
+    {
+        "name": "Litecred",
+        "symbol": "LTCR",
+        "currency": "USD"
+    },
+    {
+        "name": "EquiTrader",
+        "symbol": "EQT",
+        "currency": "USD"
+    },
+    {
+        "name": "Dollarcoin",
+        "symbol": "DLC",
+        "currency": "USD"
+    },
+    {
+        "name": "BitCoal",
+        "symbol": "COAL",
+        "currency": "USD"
+    },
+    {
+        "name": "SpeedCash",
+        "symbol": "SCS",
+        "currency": "USD"
+    },
+    {
+        "name": "Eurocoin",
+        "symbol": "EUC",
+        "currency": "USD"
+    },
+    {
+        "name": "Open Trading Network",
+        "symbol": "OTN",
+        "currency": "USD"
+    },
+    {
+        "name": "Cannation",
+        "symbol": "CNNC",
+        "currency": "USD"
+    },
+    {
+        "name": "Prime-XI",
+        "symbol": "PXI",
+        "currency": "USD"
+    },
+    {
+        "name": "MiloCoin",
+        "symbol": "MILO",
+        "currency": "USD"
+    },
+    {
+        "name": "LiteBitcoin",
+        "symbol": "LBTC",
+        "currency": "USD"
+    },
+    {
+        "name": "Cabbage",
+        "symbol": "CAB",
+        "currency": "USD"
+    },
+    {
+        "name": "TajCoin",
+        "symbol": "TAJ",
+        "currency": "USD"
+    },
+    {
+        "name": "RSGPcoin",
+        "symbol": "RSGP",
+        "currency": "USD"
+    },
+    {
+        "name": "Veltor",
+        "symbol": "VLT",
+        "currency": "USD"
+    },
+    {
+        "name": "NevaCoin",
+        "symbol": "NEVA",
+        "currency": "USD"
+    },
+    {
+        "name": "Luna Coin",
+        "symbol": "LUNA",
+        "currency": "USD"
+    },
+    {
+        "name": "VectorAI",
+        "symbol": "VEC2",
+        "currency": "USD"
+    },
+    {
+        "name": "JavaScript Token",
+        "symbol": "JS",
+        "currency": "USD"
+    },
+    {
+        "name": "High Voltage",
+        "symbol": "HVCO",
+        "currency": "USD"
+    },
+    {
+        "name": "Bulleon",
+        "symbol": "BUL",
+        "currency": "USD"
+    },
+    {
+        "name": "LiteCoin Ultra",
+        "symbol": "LTCU",
+        "currency": "USD"
+    },
+    {
+        "name": "Project-X",
+        "symbol": "NANOX",
+        "currency": "USD"
+    },
+    {
+        "name": "PLNcoin",
+        "symbol": "PLNC",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitvolt",
+        "symbol": "VOLT",
+        "currency": "USD"
+    },
+    {
+        "name": "Independent Money System",
+        "symbol": "IMS",
+        "currency": "USD"
+    },
+    {
+        "name": "PlatinumBAR",
+        "symbol": "XPTX",
+        "currency": "USD"
+    },
+    {
+        "name": "BenjiRolls",
+        "symbol": "BENJI",
+        "currency": "USD"
+    },
+    {
+        "name": "Paypex",
+        "symbol": "PAYX",
+        "currency": "USD"
+    },
+    {
+        "name": "Dalecoin",
+        "symbol": "DALC",
+        "currency": "USD"
+    },
+    {
+        "name": "BriaCoin",
+        "symbol": "BRIA",
+        "currency": "USD"
+    },
+    {
+        "name": "WomenCoin",
+        "symbol": "WOMEN",
+        "currency": "USD"
+    },
+    {
+        "name": "Dash Green",
+        "symbol": "DASHG",
+        "currency": "USD"
+    },
+    {
+        "name": "Wild Beast Block",
+        "symbol": "WBB",
+        "currency": "USD"
+    },
+    {
+        "name": "Peerguess",
+        "symbol": "GUESS",
+        "currency": "USD"
+    },
+    {
+        "name": "EcoCoin",
+        "symbol": "ECO",
+        "currency": "USD"
+    },
+    {
+        "name": "Crystal Clear ",
+        "symbol": "CCT",
+        "currency": "USD"
+    },
+    {
+        "name": "Comet",
+        "symbol": "CMT",
+        "currency": "USD"
+    },
+    {
+        "name": "SONO",
+        "symbol": "SONO",
+        "currency": "USD"
+    },
+    {
+        "name": "NodeCoin",
+        "symbol": "NODC",
+        "currency": "USD"
+    },
+    {
+        "name": "iBank",
+        "symbol": "IBANK",
+        "currency": "USD"
+    },
+    {
+        "name": "Coinonat",
+        "symbol": "CXT",
+        "currency": "USD"
+    },
+    {
+        "name": "SocialCoin",
+        "symbol": "SOCC",
+        "currency": "USD"
+    },
+    {
+        "name": "Fintab",
+        "symbol": "FNTB",
+        "currency": "USD"
+    },
+    {
+        "name": "RouletteToken",
+        "symbol": "RLT",
+        "currency": "USD"
+    },
+    {
+        "name": "Ccore",
+        "symbol": "CCO",
+        "currency": "USD"
+    },
+    {
+        "name": "Iconic",
+        "symbol": "ICON",
+        "currency": "USD"
+    },
+    {
+        "name": "Experience Points",
+        "symbol": "XP",
+        "currency": "USD"
+    },
+    {
+        "name": "VapersCoin",
+        "symbol": "VPRC",
+        "currency": "USD"
+    },
+    {
+        "name": "PonziCoin",
+        "symbol": "PONZI",
+        "currency": "USD"
+    },
+    {
+        "name": "Argus",
+        "symbol": "ARGUS",
+        "currency": "USD"
+    },
+    {
+        "name": "Concoin",
+        "symbol": "CONX",
+        "currency": "USD"
+    },
+    {
+        "name": "ArtByte",
+        "symbol": "ABY",
+        "currency": "USD"
+    },
+    {
+        "name": "Helpico",
+        "symbol": "HELP",
+        "currency": "USD"
+    },
+    {
+        "name": "HarmonyCoin",
+        "symbol": "HMC",
+        "currency": "USD"
+    },
+    {
+        "name": "X2",
+        "symbol": "X2",
+        "currency": "USD"
+    },
+    {
+        "name": "CRYPTO20",
+        "symbol": "C20",
+        "currency": "USD"
+    },
+    {
+        "name": "RON",
+        "symbol": "RON",
+        "currency": "USD"
+    },
+    {
+        "name": "Aces",
+        "symbol": "ACES",
+        "currency": "USD"
+    },
+    {
+        "name": "ALQO",
+        "symbol": "XLQ",
+        "currency": "USD"
+    },
+    {
+        "name": "BUMO",
+        "symbol": "BU",
+        "currency": "USD"
+    },
+    {
+        "name": "DEEX",
+        "symbol": "DEEX",
+        "currency": "USD"
+    },
+    {
+        "name": "FOIN",
+        "symbol": "FOIN",
+        "currency": "USD"
+    },
+    {
+        "name": "Kala",
+        "symbol": "KALA",
+        "currency": "USD"
+    },
+    {
+        "name": "LIZA",
+        "symbol": "LIZA",
+        "currency": "USD"
+    },
+    {
+        "name": "MOAC",
+        "symbol": "MOAC",
+        "currency": "USD"
+    },
+    {
+        "name": "NAGA",
+        "symbol": "NGC",
+        "currency": "USD"
+    },
+    {
+        "name": "ODEM",
+        "symbol": "ODE",
+        "currency": "USD"
+    },
+    {
+        "name": "Veggie",
+        "symbol": "VEGI",
+        "currency": "USD"
+    },
+    {
+        "name": "WiBX",
+        "symbol": "WBX",
+        "currency": "USD"
+    },
+    {
+        "name": "Axiom",
+        "symbol": "AXIOM",
+        "currency": "USD"
+    },
+    {
+        "name": "Clams",
+        "symbol": "CLAM",
+        "currency": "USD"
+    },
+    {
+        "name": "Dashs",
+        "symbol": "DASHS",
+        "currency": "USD"
+    },
+    {
+        "name": "Fidyo",
+        "symbol": "FIDYO",
+        "currency": "USD"
+    },
+    {
+        "name": "Flash",
+        "symbol": "FLASH",
+        "currency": "USD"
+    },
+    {
+        "name": "Hydro",
+        "symbol": "HYDRO",
+        "currency": "USD"
+    },
+    {
+        "name": "Lykke",
+        "symbol": "LKK",
+        "currency": "USD"
+    },
+    {
+        "name": "MMXVI",
+        "symbol": "MMXVI",
+        "currency": "USD"
+    },
+    {
+        "name": "SaluS",
+        "symbol": "SLS",
+        "currency": "USD"
+    },
+    {
+        "name": "Tesra",
+        "symbol": "TSR",
+        "currency": "USD"
+    },
+    {
+        "name": "BioBar",
+        "symbol": "BIOB",
+        "currency": "USD"
+    },
+    {
+        "name": "Bubble",
+        "symbol": "BUB",
+        "currency": "USD"
+    },
+    {
+        "name": "Change",
+        "symbol": "CAG",
+        "currency": "USD"
+    },
+    {
+        "name": "ECC",
+        "symbol": "ECC",
+        "currency": "USD"
+    },
+    {
+        "name": "Francs",
+        "symbol": "FRN",
+        "currency": "USD"
+    },
+    {
+        "name": "Maggie",
+        "symbol": "MAG",
+        "currency": "USD"
+    },
+    {
+        "name": "Nectar",
+        "symbol": "NEC",
+        "currency": "USD"
+    },
+    {
+        "name": "netBit",
+        "symbol": "NBIT",
+        "currency": "USD"
+    },
+    {
+        "name": "Sphere",
+        "symbol": "SPHR",
+        "currency": "USD"
+    },
+    {
+        "name": "Wagerr",
+        "symbol": "WGR",
+        "currency": "USD"
+    },
+    {
+        "name": "XDE II",
+        "symbol": "XDE2",
+        "currency": "USD"
+    },
+    {
+        "name": "BitCore",
+        "symbol": "BTX",
+        "currency": "USD"
+    },
+    {
+        "name": "BMChain",
+        "symbol": "BMT",
+        "currency": "USD"
+    },
+    {
+        "name": "BTCMoon",
+        "symbol": "BTCM",
+        "currency": "USD"
+    },
+    {
+        "name": "Electra",
+        "symbol": "ECA",
+        "currency": "USD"
+    },
+    {
+        "name": "LKRCoin",
+        "symbol": "LKRc",
+        "currency": "USD"
+    },
+    {
+        "name": "Moneta",
+        "symbol": "MONETA",
+        "currency": "USD"
+    },
+    {
+        "name": "Neumark",
+        "symbol": "NEU",
+        "currency": "USD"
+    },
+    {
+        "name": "Omicron",
+        "symbol": "OMC",
+        "currency": "USD"
+    },
+    {
+        "name": "Sexcoin",
+        "symbol": "SXC",
+        "currency": "USD"
+    },
+    {
+        "name": "United Traders Token",
+        "symbol": "UTT",
+        "currency": "USD"
+    },
+    {
+        "name": "Bastonet",
+        "symbol": "BSN",
+        "currency": "USD"
+    },
+    {
+        "name": "BitTube",
+        "symbol": "TUBE",
+        "currency": "USD"
+    },
+    {
+        "name": "BitcoinX",
+        "symbol": "BCX",
+        "currency": "USD"
+    },
+    {
+        "name": "BlockCDN",
+        "symbol": "BCDN",
+        "currency": "USD"
+    },
+    {
+        "name": "ClubCoin",
+        "symbol": "CLUB",
+        "currency": "USD"
+    },
+    {
+        "name": "DarkLisk",
+        "symbol": "DISK",
+        "currency": "USD"
+    },
+    {
+        "name": "Etheroll",
+        "symbol": "DICE",
+        "currency": "USD"
+    },
+    {
+        "name": "Fazzcoin",
+        "symbol": "FAZZ",
+        "currency": "USD"
+    },
+    {
+        "name": "MarxCoin",
+        "symbol": "MARX",
+        "currency": "USD"
+    },
+    {
+        "name": "PeepCoin",
+        "symbol": "PCN",
+        "currency": "USD"
+    },
+    {
+        "name": "Polybius",
+        "symbol": "PLBT",
+        "currency": "USD"
+    },
+    {
+        "name": "Quotient",
+        "symbol": "XQN",
+        "currency": "USD"
+    },
+    {
+        "name": "RubleBit",
+        "symbol": "RUBIT",
+        "currency": "USD"
+    },
+    {
+        "name": "Rubycoin",
+        "symbol": "RBY",
+        "currency": "USD"
+    },
+    {
+        "name": "SegWit2x",
+        "symbol": "B2X",
+        "currency": "USD"
+    },
+    {
+        "name": "TopChain",
+        "symbol": "TOPC",
+        "currency": "USD"
+    },
+    {
+        "name": "Universa",
+        "symbol": "UTNP",
+        "currency": "USD"
+    },
+    {
+        "name": "Voyacoin",
+        "symbol": "VOYA",
+        "currency": "USD"
+    },
+    {
+        "name": "Zeitcoin",
+        "symbol": "ZEIT",
+        "currency": "USD"
+    },
+    {
+        "name": "AgaveCoin",
+        "symbol": "AGVC",
+        "currency": "USD"
+    },
+    {
+        "name": "BNS Token",
+        "symbol": "BNS",
+        "currency": "USD"
+    },
+    {
+        "name": "CanYaCoin",
+        "symbol": "CAN",
+        "currency": "USD"
+    },
+    {
+        "name": "COMSA [ETH]",
+        "symbol": "CMS",
+        "currency": "USD"
+    },
+    {
+        "name": "EncrypGen",
+        "symbol": "DNA",
+        "currency": "USD"
+    },
+    {
+        "name": "KashhCoin",
+        "symbol": "KASHH",
+        "currency": "USD"
+    },
+    {
+        "name": "Lambo Coin",
+        "symbol": "LAMBO",
+        "currency": "USD"
+    },
+    {
+        "name": "RoyalCoin",
+        "symbol": "ROYAL",
+        "currency": "USD"
+    },
+    {
+        "name": "ShellCoin",
+        "symbol": "SHELL",
+        "currency": "USD"
+    },
+    {
+        "name": "SwapToken",
+        "symbol": "TOKEN",
+        "currency": "USD"
+    },
+    {
+        "name": "ThoreNext",
+        "symbol": "THX",
+        "currency": "USD"
+    },
+    {
+        "name": "Auroracoin",
+        "symbol": "AUR",
+        "currency": "USD"
+    },
+    {
+        "name": "Authorship",
+        "symbol": "ATS",
+        "currency": "USD"
+    },
+    {
+        "name": "AvatarCoin",
+        "symbol": "AV",
+        "currency": "USD"
+    },
+    {
+        "name": "BlazerCoin",
+        "symbol": "BLAZR",
+        "currency": "USD"
+    },
+    {
+        "name": "BlockStamp",
+        "symbol": "BST",
+        "currency": "USD"
+    },
+    {
+        "name": "ColossusXT",
+        "symbol": "COLX",
+        "currency": "USD"
+    },
+    {
+        "name": "FirstBlood",
+        "symbol": "1ST",
+        "currency": "USD"
+    },
+    {
+        "name": "Flash Token",
+        "symbol": "FTOKEN",
+        "currency": "USD"
+    },
+    {
+        "name": "Fonziecoin",
+        "symbol": "FONZ",
+        "currency": "USD"
+    },
+    {
+        "name": "FuturoCoin",
+        "symbol": "FTO",
+        "currency": "USD"
+    },
+    {
+        "name": "PrismChain",
+        "symbol": "PRM",
+        "currency": "USD"
+    },
+    {
+        "name": "RabbitCoin",
+        "symbol": "RBBT",
+        "currency": "USD"
+    },
+    {
+        "name": "SpankChain",
+        "symbol": "SPANK",
+        "currency": "USD"
+    },
+    {
+        "name": "SportsCoin",
+        "symbol": "SPORT",
+        "currency": "USD"
+    },
+    {
+        "name": "TrickyCoin",
+        "symbol": "TRICK",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin God",
+        "symbol": "GOD",
+        "currency": "USD"
+    },
+    {
+        "name": "CoinEx Token",
+        "symbol": "CET",
+        "currency": "USD"
+    },
+    {
+        "name": "Dinastycoin",
+        "symbol": "DCY",
+        "currency": "USD"
+    },
+    {
+        "name": "NewYorkCoin",
+        "symbol": "NYC",
+        "currency": "USD"
+    },
+    {
+        "name": "NoLimitCoin",
+        "symbol": "NLC2",
+        "currency": "USD"
+    },
+    {
+        "name": "V-Dimension",
+        "symbol": "VOLLAR",
+        "currency": "USD"
+    },
+    {
+        "name": "Counterparty",
+        "symbol": "XCP",
+        "currency": "USD"
+    },
+    {
+        "name": "Cycling Coin",
+        "symbol": "CYC",
+        "currency": "USD"
+    },
+    {
+        "name": "DeltaCredits",
+        "symbol": "DCRE",
+        "currency": "USD"
+    },
+    {
+        "name": "Bitcoin Vault",
+        "symbol": "BTCV",
+        "currency": "USD"
+    },
+    {
+        "name": "Ethereum Lite",
+        "symbol": "ELITE",
+        "currency": "USD"
+    },
+    {
+        "name": "InflationCoin",
+        "symbol": "IFLT",
+        "currency": "USD"
+    },
+    {
+        "name": "InvisibleCoin",
+        "symbol": "IVZ",
+        "currency": "USD"
+    },
+    {
+        "name": "Super Bitcoin",
+        "symbol": "SBTC",
+        "currency": "USD"
+    },
+    {
+        "name": "CryptoBossCoin",
+        "symbol": "CBC",
+        "currency": "USD"
+    },
+    {
+        "name": "Ethereum eRush",
+        "symbol": "EER",
+        "currency": "USD"
+    },
+    {
+        "name": "EurocoinToken",
+        "symbol": "ECTE",
+        "currency": "USD"
+    },
+    {
+        "name": "Exchange Union",
+        "symbol": "XUC",
+        "currency": "USD"
+    },
+    {
+        "name": "FrankyWillCoin",
+        "symbol": "FRWC",
+        "currency": "USD"
+    },
+    {
+        "name": "GameLeagueCoin",
+        "symbol": "GML",
+        "currency": "USD"
+    },
+    {
+        "name": "Halloween Coin",
+        "symbol": "HALLO",
+        "currency": "USD"
+    },
+    {
+        "name": "Jibrel Network",
+        "symbol": "JNT",
+        "currency": "USD"
+    },
+    {
+        "name": "ThoreCashTRX",
+        "symbol": "TCHTRX",
+        "currency": "USD"
+    },
+    {
+        "name": "United Bitcoin",
+        "symbol": "UBTC",
+        "currency": "USD"
+    },
+    {
+        "name": "CryptoWorldX Token",
+        "symbol": "CWXT",
+        "currency": "USD"
+    },
+    {
+        "name": "Cryptoindex.com 100",
+        "symbol": "CIX100",
+        "currency": "USD"
+    },
+    {
+        "name": "Digital Bullion Gold",
+        "symbol": "DBG",
+        "currency": "USD"
+    },
+    {
+        "name": "Advanced Internet Blocks",
+        "symbol": "AIB",
+        "currency": "USD"
+    }
+]

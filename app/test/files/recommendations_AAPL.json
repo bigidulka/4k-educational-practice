@@ -1,0 +1,8 @@
+{
+    "symbol": "AAPL",
+    "current_price": 228.3,
+    "support_level": 193.07,
+    "resistance_level": 195.37,
+    "recommendation": "Продажа",
+    "message": "Текущая цена (228.3) достигла уровня сопротивления (195.37). Рекомендуется продажа."
+}

@@ -2,8 +2,9 @@
 from fastapi import APIRouter, HTTPException, Query
 from src.services import investpy_requests as investpy_services
 from src.services import yfinance_requests as yfinance_services
+from src.services import tinkoff_requests as tinkoff_requests 
 from typing import Optional, List, Dict
-from datetime import datetime
+from datetime import datetime, timedelta
 
 router = APIRouter()
 
@@ -172,5 +173,136 @@ async def get_current_data(
                 detail=f"{market.capitalize()} '{symbol}' не найден"
             )
         return current_data
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@router.get("/tb_historical/{symbol}", response_model=List[Dict])
+async def get_tinkoff_historical_data(
+    symbol: str,
+    from_date: str = Query('2020-01-01', regex=r'^\d{4}-\d{2}-\d{2}$', description="Начальная дата в формате YYYY-MM-DD"),
+    to_date: str = Query('2023-01-01', regex=r'^\d{4}-\d{2}-\d{2}$', description="Конечная дата в формате YYYY-MM-DD"),
+    utc_offset: int = Query(0, ge=-12, le=14, description="Смещение UTC в часах (например, 3 для UTC+3)"),
+    interval: str = Query('1d', regex=r'^(1m|5m|15m|1h|1d|1w|1M)$', description="Интервал данных (например, '1d')")
+) -> List[Dict]:
+    """
+    Получает исторические данные для указанного символа акции в заданном диапазоне дат и часовом поясе.
+
+    Параметры:
+        symbol (str): Тикер символа.
+        from_date (str): Начальная дата в формате "YYYY-MM-DD".
+        to_date (str): Конечная дата в формате "YYYY-MM-DD".
+        utc_offset (int): Смещение UTC в часах.
+        interval (str): Интервал данных (например, '1d').
+
+    Returns:
+        List[dict]: Список исторических записей данных.
+    """
+    try:
+        from_date_obj = datetime.strptime(from_date, '%Y-%m-%d')
+        to_date_obj = datetime.strptime(to_date, '%Y-%m-%d')
+        timezone = f"Etc/GMT-{utc_offset}" if utc_offset > 0 else f"Etc/GMT+{abs(utc_offset)}"
+
+        historical_data = await tinkoff_requests.get_historical_data(
+            market="stock",
+            symbol=symbol,
+            from_date=from_date_obj.strftime('%Y-%m-%d'),
+            to_date=to_date_obj.strftime('%Y-%m-%d'),
+            client_timezone=timezone,
+            interval=interval
+        )
+        if not historical_data:
+            raise HTTPException(
+                status_code=404,
+                detail=f"Акция '{symbol}' не найдена или данные недоступны"
+            )
+        return historical_data
+    except ValueError as ve:
+        raise HTTPException(status_code=400, detail=str(ve))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.get("/tb_current/{symbol}", response_model=Dict)
+async def get_tinkoff_current_data(
+    symbol: str,
+    interval: str = Query('1d', regex=r'^(1m|5m|15m|1h|1d|1w|1M)$', description="Интервал данных (например, '1d')")
+) -> Dict:
+    """
+    Получает текущие данные для указанного символа акции.
+
+    Параметры:
+        symbol (str): Тикер символа.
+        interval (str): Интервал данных (например, '1d').
+
+    Returns:
+        dict: Последняя запись данных для указанного тикера.
+    """
+    try:
+        current_data = await tinkoff_requests.get_current_data(market="stock", symbol=symbol, interval=interval)
+        if current_data is None:
+            raise HTTPException(
+                status_code=404,
+                detail=f"Акция '{symbol}' не найдена"
+            )
+        return current_data
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+@router.get("/tb_tickers", response_model=List[Dict[str, str]])
+async def get_tickers() -> List[Dict[str, str]]:
+    """
+    Получает список всех доступных тикеров акций на Tinkoff.
+
+    Returns:
+        List[Dict[str, str]]: Список словарей с тикерами акций и их FIGI.
+
+    Raises:
+        HTTPException: В случае ошибки.
+    """
+    try:
+        tickers = await tinkoff_requests.get_all_tickers()
+        if not tickers:
+            raise HTTPException(status_code=404, detail="Тикеры акций не найдены")
+        return tickers
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+@router.get("/recommendations/{symbol}", response_model=Dict)
+async def get_recommendations(
+    symbol: str
+) -> Dict:
+    """
+    Возвращает рекомендации по покупке или продаже на основе исторических данных акции.
+    
+    Параметры:
+        symbol (str): Тикер символа.
+    
+    Returns:
+        dict: Рекомендации по покупке, продаже или удержанию.
+    """
+    try:
+        # Получаем исторические данные акции за последний год
+        historical_data = await tinkoff_requests.get_historical_data(
+            market="stock",
+            symbol=symbol,
+            from_date=(datetime.now() - timedelta(days=365)).strftime('%Y-%m-%d'),
+            to_date=datetime.now().strftime('%Y-%m-%d'),
+            client_timezone="UTC",
+            interval="1d"
+        )
+        
+        if not historical_data:
+            raise HTTPException(
+                status_code=404,
+                detail=f"Исторические данные для акции '{symbol}' не найдены"
+            )
+        
+        # Генерируем рекомендации на основе исторических данных
+        recommendation = await tinkoff_requests.generate_recommendation_based_on_history(symbol, historical_data)
+        
+        return recommendation
+
+    except HTTPException as he:
+        raise he
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

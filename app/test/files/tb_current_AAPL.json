@@ -1,0 +1,17 @@
+{
+    "open": 225.0,
+    "high": 228.86,
+    "low": 225.0,
+    "close": 228.3,
+    "volume": 0,
+    "info": {
+        "figi": "BBG000B9XRY4",
+        "ticker": "AAPL",
+        "class_code": "SPBXM",
+        "isin": "US0378331005",
+        "lot": 1,
+        "currency": "usd",
+        "name": "Apple",
+        "type": "share"
+    }
+}
