@@ -45,15 +45,21 @@ def handle_telegram_exception(func):
 def format_asset_summary(info: Dict) -> str:
     name = info.get('info', {}).get('name', 'Нет данных')
     ticker = info.get('info', {}).get('ticker', 'Нет тикера')
-    current_price = f"{info.get('current_price', 'Нет данных'):.2f}" if isinstance(info.get('current_price'), (int, float)) else info.get('current_price')
-    high = f"{info.get('high', 'Нет данных'):.2f}" if isinstance(info.get('high'), (int, float)) else info.get('high')
-    low = f"{info.get('low', 'Нет данных'):.2f}" if isinstance(info.get('low'), (int, float)) else info.get('low')
+    current_price = info.get('current_price', 'Нет данных')
+    high = info.get('high', 'Нет данных')
+    low = info.get('low', 'Нет данных')
     currency = info.get('info', {}).get('currency', 'Нет данных')
-    market_cap = f"{info.get('info', {}).get('marketCap', 'Не указано'):.2f}" if isinstance(info.get('info', {}).get('marketCap'), (int, float)) else info.get('info', {}).get('marketCap')
+    volume = info.get('volume', 0)
+
+    turnover_ratio = 10
+    try:
+        calculated_market_cap = float(volume) * turnover_ratio
+    except (ValueError, TypeError):
+        calculated_market_cap = "Не удалось рассчитать"
 
     if high and low:
         try:
-            change_percent = f"{(float(high) - float(low)) / float(low) * 100:.2f}"
+            change_percent = (float(high) - float(low)) / float(low) * 100
         except ZeroDivisionError:
             change_percent = "Ошибка деления на ноль"
     else:
@@ -65,7 +71,7 @@ def format_asset_summary(info: Dict) -> str:
         f"📊 Минимум за день: {low} {currency}\n"
         f"📊 Максимум за день: {high} {currency}\n"
         f"📊 Изменение за день: {change_percent}%\n"
-        f"💼 Рыночная капитализация: {market_cap} млрд\n"
+        f"🔄 Объем торгов за день: {volume} {currency}\n"
     )
     
     return summary
@@ -74,17 +80,17 @@ def format_asset_summary(info: Dict) -> str:
 def format_crypto_summary(info: Dict) -> str:
     name = info.get('info', {}).get('name', 'Нет данных')
     ticker = info.get('info', {}).get('symbol', 'Нет тикера')
-    current_price = f"{info.get('current_price', 'Нет данных'):.2f}" if isinstance(info.get('current_price'), (int, float)) else info.get('current_price')
-    high = f"{info.get('High', 'Нет данных'):.2f}" if isinstance(info.get('High'), (int, float)) else info.get('High')
-    low = f"{info.get('Low', 'Нет данных'):.2f}" if isinstance(info.get('Low'), (int, float)) else info.get('Low')
+    current_price = info.get('current_price', 'Нет данных')
+    high = info.get('High', 'Нет данных')
+    low = info.get('Low', 'Нет данных')
     currency = info.get('info', {}).get('currency', 'Нет данных')
-    volume = f"{info.get('Volume', 'Нет данных'):.2f}" if isinstance(info.get('Volume'), (int, float)) else info.get('Volume')
-    circulating_supply = f"{info.get('info', {}).get('circulatingSupply', 'Нет данных'):.2f}" if isinstance(info.get('info', {}).get('circulatingSupply'), (int, float)) else info.get('info', {}).get('circulatingSupply')
-    market_cap = f"{info.get('info', {}).get('marketCap', 'Не указано'):.2f}" if isinstance(info.get('info', {}).get('marketCap'), (int, float)) else info.get('info', {}).get('marketCap')
+    volume = info.get('Volume', 'Нет данных')
+    circulating_supply = info.get('info', {}).get('circulatingSupply', 'Нет данных')
+    market_cap = info.get('info', {}).get('marketCap', 'Не указано')
 
     if high and low:
         try:
-            change_percent = f"{(float(high) - float(low)) / float(low) * 100:.2f}"
+            change_percent = (float(high) - float(low)) / float(low) * 100
         except ZeroDivisionError:
             change_percent = "Ошибка деления на ноль"
     else:
@@ -107,18 +113,18 @@ def format_crypto_summary(info: Dict) -> str:
 def format_currency_summary(info: Dict) -> str:
     name = info.get('info', {}).get('longName', 'Нет данных')
     ticker = info.get('info', {}).get('symbol', 'Нет тикера')
-    current_price = f"{info.get('current_price', 'Нет данных'):.2f}" if isinstance(info.get('current_price'), (int, float)) else info.get('current_price')
-    high = f"{info.get('info', {}).get('regularMarketDayHigh', 'Нет данных'):.2f}" if isinstance(info.get('info', {}).get('regularMarketDayHigh'), (int, float)) else info.get('info', {}).get('regularMarketDayHigh')
-    low = f"{info.get('info', {}).get('regularMarketDayLow', 'Нет данных'):.2f}" if isinstance(info.get('info', {}).get('regularMarketDayLow'), (int, float)) else info.get('info', {}).get('regularMarketDayLow')
+    current_price = info.get('current_price', 'Нет данных')
+    high = info.get('info', {}).get('regularMarketDayHigh', 'Нет данных')
+    low = info.get('info', {}).get('regularMarketDayLow', 'Нет данных')
     currency = info.get('info', {}).get('currency', 'Нет данных')
-    year_low = f"{info.get('info', {}).get('fiftyTwoWeekLow', 'Нет данных'):.2f}" if isinstance(info.get('info', {}).get('fiftyTwoWeekLow'), (int, float)) else info.get('info', {}).get('fiftyTwoWeekLow')
-    year_high = f"{info.get('info', {}).get('fiftyTwoWeekHigh', 'Нет данных'):.2f}" if isinstance(info.get('info', {}).get('fiftyTwoWeekHigh'), (int, float)) else info.get('info', {}).get('fiftyTwoWeekHigh')
-    average_50 = f"{info.get('info', {}).get('fiftyDayAverage', 'Нет данных'):.2f}" if isinstance(info.get('info', {}).get('fiftyDayAverage'), (int, float)) else info.get('info', {}).get('fiftyDayAverage')
-    average_200 = f"{info.get('info', {}).get('twoHundredDayAverage', 'Нет данных'):.2f}" if isinstance(info.get('info', {}).get('twoHundredDayAverage'), (int, float)) else info.get('info', {}).get('twoHundredDayAverage')
+    year_low = info.get('info', {}).get('fiftyTwoWeekLow', 'Нет данных')
+    year_high = info.get('info', {}).get('fiftyTwoWeekHigh', 'Нет данных')
+    average_50 = info.get('info', {}).get('fiftyDayAverage', 'Нет данных')
+    average_200 = info.get('info', {}).get('twoHundredDayAverage', 'Нет данных')
 
     if high and low:
         try:
-            change_percent = f"{(float(high) - float(low)) / float(low) * 100:.2f}"
+            change_percent = (float(high) - float(low)) / float(low) * 100
         except ZeroDivisionError:
             change_percent = "Ошибка деления на ноль"
     else:

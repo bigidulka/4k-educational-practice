@@ -367,45 +367,79 @@ def select_currencies_keyboard(currencies: List[str], selected: List[str] = None
     keyboard = builder.as_markup()
     return "Выберите две валюты:", keyboard
 
-def asset_detail_keyboard(ticker_full: str, is_favorite: bool, is_subscribed: bool, has_alert: bool, add_update_button: bool = False) -> InlineKeyboardMarkup:
+def asset_detail_keyboard(
+    ticker_full: str,
+    is_favorite: bool,
+    is_subscribed: bool,
+    has_alert: bool,
+    previous: str = 'info_assets_keyboard'
+) -> InlineKeyboardMarkup:
     builder = InlineKeyboardBuilder()
     asset_type, ticker = ticker_full.split("_", 1)
 
     builder.row(
-        InlineKeyboardButton(text='📉 Показать график', callback_data=BaseCallbackData(data=f'show_chart_{ticker_full}').pack())
+        InlineKeyboardButton(
+            text='📉 Показать график',
+            callback_data=BaseCallbackData(data=f'show_chart_{ticker_full}').pack()
+        )
     )
 
     if is_subscribed:
         builder.row(
-            InlineKeyboardButton(text='🔕 Отписаться от изменений цены', callback_data=BaseCallbackData(data=f'unsubscribe_{ticker_full}').pack())
+            InlineKeyboardButton(
+                text='🔕 Отписаться от изменений цены',
+                callback_data=BaseCallbackData(data=f'unsubscribe_{ticker_full}').pack()
+            )
         )
     else:
         builder.row(
-            InlineKeyboardButton(text='🔔 Подписаться на изменения цены', callback_data=BaseCallbackData(data=f'subscribe_{ticker_full}').pack())
+            InlineKeyboardButton(
+                text='🔔 Подписаться на изменения цены',
+                callback_data=BaseCallbackData(data=f'subscribe_{ticker_full}').pack()
+            )
         )
 
     if has_alert:
         builder.row(
-            InlineKeyboardButton(text='❌ Удалить ценовой уровень', callback_data=BaseCallbackData(data=f'remove_alert_{ticker_full}').pack())
+            InlineKeyboardButton(
+                text='❌ Удалить ценовой уровень',
+                callback_data=BaseCallbackData(data=f'remove_alert_{ticker_full}').pack()
+            )
         )
     else:
         builder.row(
-            InlineKeyboardButton(text='⚠ Установить ценовой уровень', callback_data=BaseCallbackData(data=f'set_alert_{ticker_full}').pack())
+            InlineKeyboardButton(
+                text='⚠ Установить ценовой уровень',
+                callback_data=BaseCallbackData(data=f'set_alert_{ticker_full}').pack()
+            )
         )
 
     if is_favorite:
         builder.row(
-            InlineKeyboardButton(text='⭐ Убрать из избранного', callback_data=BaseCallbackData(data=f'remove_favorite_{ticker_full}').pack())
+            InlineKeyboardButton(
+                text='⭐ Убрать из избранного',
+                callback_data=BaseCallbackData(data=f'remove_favorite_{ticker_full}').pack()
+            )
         )
     else:
         builder.row(
-            InlineKeyboardButton(text='⭐ Добавить в избранное', callback_data=BaseCallbackData(data=f'add_favorite_{ticker_full}').pack())
+            InlineKeyboardButton(
+                text='⭐ Добавить в избранное',
+                callback_data=BaseCallbackData(data=f'add_favorite_{ticker_full}').pack()
+            )
         )
     
     builder.row(
         InlineKeyboardButton(
-            text='🔄 Обновить информацию', 
+            text='🔄 Обновить информацию',
             callback_data=BaseCallbackData(data=f'update_info_{ticker_full}').pack()
+        )
+    )
+
+    builder.row(
+        InlineKeyboardButton(
+            text='↩ Назад',
+            callback_data=Navigation(data='back', previous=previous).pack()
         )
     )
 
