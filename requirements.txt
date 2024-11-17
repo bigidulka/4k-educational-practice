@@ -1,5 +1,8 @@
-fastapi
-uvicorn[standard]
-investpy
-pandas
 yfinance
+investpy
+pytest
+pytest-asyncio
+pytest-cov
+investiny
+tinkoff-investments
+aiogram

@@ -1,7 +1,0 @@
-# File path: docker-compose.yml
-version: '3.9'
-services:
-  web:
-    build: .
-    ports:
-      - "8000:8000"

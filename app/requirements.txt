@@ -1,6 +1,0 @@
-yfinance
-investpy
-pytest
-pytest-asyncio
-pytest-cov
-investiny

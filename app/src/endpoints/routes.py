@@ -281,7 +281,6 @@ async def get_recommendations(
         dict: Рекомендации по покупке, продаже или удержанию.
     """
     try:
-        # Получаем исторические данные акции за последний год
         historical_data = await tinkoff_requests.get_historical_data(
             market="stock",
             symbol=symbol,
@@ -297,7 +296,6 @@ async def get_recommendations(
                 detail=f"Исторические данные для акции '{symbol}' не найдены"
             )
         
-        # Генерируем рекомендации на основе исторических данных
         recommendation = await tinkoff_requests.generate_recommendation_based_on_history(symbol, historical_data)
         
         return recommendation
