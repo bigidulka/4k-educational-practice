@@ -1,5 +1,5 @@
 API_TOKEN = '7704537041:AAGNOzRsXszQVTBYmyCdBlogGTB__jgEoEE'
-DATABASE_URL = "sqlite+aiosqlite:///./bots/data/database.db"
+DATABASE_URL = "sqlite+aiosqlite:///./data/database.db"
 
 BASE_SETTINGS = {
     "timezone": "0",
@@ -28,7 +28,8 @@ FREQUENCY_MAPPING = {
     '24h': 86400,
 }
 
-BASE_URL = 'http://bigidulka2.ddns.net:8000'
+# BASE_URL = 'http://bigidulka2.ddns.net:8000'
+BASE_URL = 'http://web:8000'
 
 OUTPUT_DIR = 'other/data/results'
 

@@ -1,8 +1,11 @@
-yfinance
-investpy
-pytest
-pytest-asyncio
-pytest-cov
-investiny
 tinkoff-investments
 aiogram
+fastapi
+httpx
+investpy
+mplfinance
+pandas
+sqlalchemy
+uvicorn
+yfinance
+aiosqlite

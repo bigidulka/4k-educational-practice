@@ -16,12 +16,8 @@ import pandas as pd
 import os
 from fastapi import APIRouter, HTTPException
 from statistics import median
-from typing import Optional, List, Dict, Any
 
 TOKEN = "t.mW7xlCY9XgIU6DztPR-kA3RNKqqiT-ALUHoctPusUmsPsufYS-EuPXdEUaBH6glIjxvJTU1ZgytuclR8_s9qVQ"
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
 
 INTERVAL_MAPPING = {
     "1m": CandleInterval.CANDLE_INTERVAL_1_MIN,
@@ -45,6 +41,7 @@ def quotation_to_float(quotation: Quotation) -> float:
     '''
     Преобразует объект Quotation в float.
     '''
+    logging.debug(f"Преобразование объекта Quotation: {quotation} в float")
     return quotation.units + quotation.nano / 1e9
 
 async def get_all_tickers() -> List[Dict[str, str]]:
@@ -54,12 +51,14 @@ async def get_all_tickers() -> List[Dict[str, str]]:
     Returns:
         List[Dict[str, str]]: Список словарей с тикерами акций и их FIGI.
     '''
+    logging.info("Получаем список всех тикеров акций.")
     async with AsyncClient(TOKEN) as client:
         response = await client.instruments.shares()
         tickers = [
             {"ticker": instrument.ticker, "figi": instrument.figi, "name": instrument.name}
             for instrument in response.instruments
         ]
+    logging.info(f"Получено {len(tickers)} тикеров.")
     return tickers
 
 async def fetch_data(figi: str, interval: CandleInterval, from_: datetime, to: datetime) -> pd.DataFrame:
@@ -75,6 +74,7 @@ async def fetch_data(figi: str, interval: CandleInterval, from_: datetime, to: d
     Returns:
         pd.DataFrame: Данные по инструменту в виде DataFrame.
     '''
+    logging.info(f"Получаем данные для FIGI: {figi}, с {from_} по {to}, интервал {interval}")
     async with AsyncClient(TOKEN) as client:
         candles = []
         try:
@@ -85,12 +85,14 @@ async def fetch_data(figi: str, interval: CandleInterval, from_: datetime, to: d
                 interval=interval,
             ):
                 candles.append(candle)
+            logging.info(f"Получено {len(candles)} свечей.")
         except AioRequestError as e:
-            logger.error(f"Ошибка при получении данных по FIGI {figi}: {e}")
+            logging.error(f"Ошибка при получении данных по FIGI {figi}: {e}")
             return pd.DataFrame()
 
     data = []
     for candle in candles:
+        logging.debug(f"Обрабатываем свечу: {candle}")
         data.append({
             "time": candle.time,
             "open": quotation_to_float(candle.open),
@@ -99,9 +101,14 @@ async def fetch_data(figi: str, interval: CandleInterval, from_: datetime, to: d
             "close": quotation_to_float(candle.close),
             "volume": candle.volume,
         })
-    df = pd.DataFrame(data)
-    df.set_index("time", inplace=True)
-    return df
+    if data:
+        df = pd.DataFrame(data)
+        df.set_index("time", inplace=True)
+        logging.info(f"Данные для FIGI {figi} успешно загружены.")
+        return df
+    else:
+        logging.warning(f"Нет данных для FIGI {figi}.")
+        return pd.DataFrame()
 
 async def fetch_info(figi: str) -> Dict[str, Any]:
     '''
@@ -113,6 +120,7 @@ async def fetch_info(figi: str) -> Dict[str, Any]:
     Returns:
         dict: Информация об инструменте.
     '''
+    logging.info(f"Получаем информацию для инструмента с FIGI: {figi}")
     async with AsyncClient(TOKEN) as client:
         try:
             response = await client.instruments.get_instrument_by(
@@ -130,49 +138,57 @@ async def fetch_info(figi: str) -> Dict[str, Any]:
                 "name": instrument.name,
                 "type": instrument.instrument_type,
             }
+            logging.info(f"Информация по FIGI {figi}: {info}")
             return info
         except AioRequestError as e:
-            logger.error(f"Ошибка при получении информации по FIGI {figi}: {e}")
+            logging.error(f"Ошибка при получении информации по FIGI {figi}: {e}")
             return {}
 
 async def get_current_data(market: str, symbol: str, interval: str = "1d") -> Optional[Dict[str, Any]]:
     '''
     Получает текущие данные и информацию об инструменте по символу и рынку.
-
+    
     Параметры:
         market (str): Рынок (например, "stock", "etf").
         symbol (str): Символ инструмента.
         interval (str): Интервал данных (по умолчанию "1d").
-
+    
     Returns:
         dict: Текущие данные и информация об инструменте.
     '''
+    logging.info(f"Запрос текущих данных для {market} {symbol} с интервалом {interval}")
     try:
         figi = await map_market_to_figi(market.lower(), symbol)
-        logger.info(f"Используемый FIGI: {figi}")
+        logging.info(f"Используемый FIGI: {figi}")
 
         if figi:
-            to_date = now()
-            from_date = to_date - timedelta(days=1)
             interval_tinkoff = INTERVAL_MAPPING.get(interval, CandleInterval.CANDLE_INTERVAL_DAY)
+            to_date = now()
+            from_date = to_date - timedelta(days=7)  # Получаем данные за последнюю неделю
 
-            data_task = fetch_data(figi, interval_tinkoff, from_date, to_date)
-            info_task = fetch_info(figi)
-            data, info = await asyncio.gather(data_task, info_task)
-
+            data = await fetch_data(figi, interval_tinkoff, from_date, to_date)
             if not data.empty:
-                latest_data = data.tail(1).to_dict(orient="records")[0]
-                latest_data.update({"info": info})
-                return latest_data
+                latest_candle = data.iloc[-1]
+                info = await fetch_info(figi)
+                result = {
+                    'open': latest_candle['open'],
+                    'high': latest_candle['high'],
+                    'low': latest_candle['low'],
+                    'close': latest_candle['close'],
+                    'volume': latest_candle['volume'],
+                    'info': info
+                }
+                logging.info(f"Данные для {symbol} получены успешно.")
+                return result
             else:
-                logger.warning(f"Нет данных для FIGI: {figi}")
+                logging.warning(f"Нет данных для FIGI: {figi}")
                 return None
         else:
-            logger.warning(f"Неподдерживаемый рынок или символ: {market}, {symbol}")
+            logging.warning(f"Неподдерживаемый рынок или символ: {market}, {symbol}")
             return None
 
     except Exception as e:
-        logger.error(f"Ошибка в get_current_data: {e}")
+        logging.error(f"Ошибка в get_current_data: {e}")
         return None
 
 async def get_historical_data(
@@ -197,9 +213,10 @@ async def get_historical_data(
     Returns:
         list: Список исторических данных.
     '''
+    logging.info(f"Запрос исторических данных для {market} {symbol} с {from_date} по {to_date}, интервал {interval}")
     try:
         figi = await map_market_to_figi(market.lower(), symbol)
-        logger.info(f"Используемый FIGI: {figi}")
+        logging.info(f"Используемый FIGI: {figi}")
 
         if figi:
             from_datetime = datetime.strptime(from_date, "%Y-%m-%d")
@@ -212,20 +229,21 @@ async def get_historical_data(
                         data.index = data.index.tz_localize('UTC').tz_convert(client_timezone)
                     else:
                         data.index = data.index.tz_convert(client_timezone)
+                    logging.info(f"Исторические данные для {figi} успешно загружены.")
                 except Exception as tz_error:
-                    logger.error(f"Ошибка при конвертации часового пояса: {tz_error}")
+                    logging.error(f"Ошибка при конвертации часового пояса: {tz_error}")
                     raise ValueError(f"Некорректный часовой пояс: {client_timezone}")
 
                 return data.reset_index().to_dict(orient='records')
             else:
-                logger.warning(f"Нет данных для FIGI: {figi}")
+                logging.warning(f"Нет данных для FIGI: {figi}")
                 return None
         else:
-            logger.warning(f"Неподдерживаемый рынок или символ: {market}, {symbol}")
+            logging.warning(f"Неподдерживаемый рынок или символ: {market}, {symbol}")
             return None
 
     except Exception as e:
-        logger.error(f"Ошибка в get_historical_data: {e}")
+        logging.error(f"Ошибка в get_historical_data: {e}")
         return None
 
 async def map_market_to_figi(market: str, symbol: str) -> Optional[str]:
@@ -239,11 +257,12 @@ async def map_market_to_figi(market: str, symbol: str) -> Optional[str]:
     Returns:
         str: FIGI инструмента.
     '''
+    logging.info(f"Поиск FIGI для {market} {symbol}")
     async with AsyncClient(TOKEN) as client:
         try:
             instrument_type = MARKET_MAPPING.get(market)
             if not instrument_type:
-                logger.warning(f"Неподдерживаемый тип рынка: {market}")
+                logging.warning(f"Неподдерживаемый тип рынка: {market}")
                 return None
 
             instruments_service = client.instruments
@@ -251,12 +270,34 @@ async def map_market_to_figi(market: str, symbol: str) -> Optional[str]:
             instruments_response = await search_method()
             for instrument in instruments_response.instruments:
                 if instrument.ticker == symbol:
+                    logging.info(f"Найден FIGI: {instrument.figi} для {symbol}")
                     return instrument.figi
-            logger.warning(f"Инструмент с символом {symbol} не найден на рынке {market}")
+            logging.warning(f"Инструмент с символом {symbol} не найден на рынке {market}")
             return None
         except Exception as e:
-            logger.error(f"Ошибка при поиске FIGI для {symbol}: {e}")
+            logging.error(f"Ошибка при поиске FIGI для {symbol}: {e}")
             return None
+
+def calculate_support_resistance(df: pd.DataFrame):
+    '''
+    Рассчитывает уровни поддержки и сопротивления на основе исторических данных.
+
+    Параметры:
+        df (pd.DataFrame): DataFrame с историческими данными.
+
+    Returns:
+        Tuple[Optional[float], Optional[float]]: Уровень поддержки и уровень сопротивления.
+    '''
+    logging.debug("Расчет уровней поддержки и сопротивления.")
+    try:
+        support_level = median(df['low'])
+        resistance_level = median(df['high'])
+        
+        logging.debug(f"Уровень поддержки: {support_level}, уровень сопротивления: {resistance_level}")
+        return support_level, resistance_level
+    except Exception as e:
+        logging.error(f"Ошибка в calculate_support_resistance: {e}")
+        return None, None
 
 async def generate_recommendation_based_on_history(
     symbol: str, historical_data: List[Dict[str, Any]]
@@ -271,10 +312,12 @@ async def generate_recommendation_based_on_history(
     Returns:
         dict: Сгенерированная рекомендация и пояснение.
     '''
+    logging.info(f"Генерация рекомендации для {symbol} на основе исторических данных.")
     try:
         df = pd.DataFrame(historical_data)
         
         if df.empty or len(df) < 2:
+            logging.warning("Недостаточно данных для генерации рекомендации.")
             return {
                 "symbol": symbol,
                 "recommendation": "Удержание",
@@ -295,6 +338,7 @@ async def generate_recommendation_based_on_history(
             recommendation = "Удержание"
             message = "Текущая цена не близка ни к уровню поддержки, ни к уровню сопротивления. Рекомендуется удержание."
         
+        logging.info(f"Рекомендация для {symbol}: {recommendation}")
         return {
             "symbol": symbol,
             "current_price": current_price,
@@ -305,28 +349,9 @@ async def generate_recommendation_based_on_history(
         }
     
     except Exception as e:
-        logger.error(f"Ошибка в generate_recommendation_based_on_history: {e}")
+        logging.error(f"Ошибка в generate_recommendation_based_on_history: {e}")
         return {
             "symbol": symbol,
             "recommendation": "Удержание",
             "message": "Произошла ошибка при генерации рекомендации."
         }
-
-def calculate_support_resistance(df: pd.DataFrame):
-    '''
-    Рассчитывает уровни поддержки и сопротивления на основе исторических данных.
-
-    Параметры:
-        df (pd.DataFrame): DataFrame с историческими данными.
-
-    Returns:
-        Tuple[Optional[float], Optional[float]]: Уровень поддержки и уровень сопротивления.
-    '''
-    try:
-        support_level = median(df['low'])
-        resistance_level = median(df['high'])
-        
-        return support_level, resistance_level
-    except Exception as e:
-        logger.error(f"Ошибка в calculate_support_resistance: {e}")
-        return None, None
