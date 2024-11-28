@@ -298,6 +298,34 @@ def calculate_support_resistance(df: pd.DataFrame):
     except Exception as e:
         logging.error(f"Ошибка в calculate_support_resistance: {e}")
         return None, None
+    
+def get_current_price(df, symbol):
+    """
+    Определяет текущую цену актива из DataFrame.
+    
+    Параметры:
+        df (DataFrame): Исторические данные.
+        symbol (str): Тикер символа.
+        
+    Returns:
+        float: Текущая цена.
+        
+    Raises:
+        ValueError: Если подходящий столбец не найден.
+    """
+    possible_columns = [
+        'close', 
+        'Close', 
+        f"Close_{symbol}-USD", 
+        f"Close_{symbol}=X"
+    ]
+    
+    for column in possible_columns:
+        if column in df.columns:
+            return df[column].iloc[-1]
+    
+    raise ValueError("Подходящий столбец для текущей цены не найден в DataFrame.")
+
 
 async def generate_recommendation_based_on_history(
     symbol: str, historical_data: List[Dict[str, Any]]
@@ -326,7 +354,7 @@ async def generate_recommendation_based_on_history(
         
         support_level, resistance_level = calculate_support_resistance(df)
         
-        current_price = df['close'].iloc[-1]
+        current_price = get_current_price(df, symbol)
         
         if support_level and current_price <= support_level:
             recommendation = "Покупка"

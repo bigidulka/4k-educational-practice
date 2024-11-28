@@ -1,8 +1,8 @@
-# Используем базовый образ Python 3.10 Slim
+# Используем базовый образ Python
 FROM python:3.10-slim
 
 # Устанавливаем рабочую директорию
-WORKDIR /app
+WORKDIR /auth
 
 # Копируем файл зависимостей
 COPY requirements.txt .
@@ -10,11 +10,11 @@ COPY requirements.txt .
 # Устанавливаем зависимости
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Копируем весь код приложения, включая auth.py
-COPY app/ .
+# Копируем auth.py из корневой директории
+COPY auth.py .
 
 # Указываем порт, который будет использовать приложение
 EXPOSE 8000
 
 # Команда для запуска сервера
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "auth:app", "--host", "0.0.0.0", "--port", "8000"]

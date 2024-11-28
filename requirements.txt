@@ -9,3 +9,5 @@ sqlalchemy
 uvicorn
 yfinance
 aiosqlite
+passlib[bcrypt]
+pydantic[email]

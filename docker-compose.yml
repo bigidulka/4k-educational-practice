@@ -28,6 +28,19 @@ services:
       - FASTAPI_URL=http://web:8000
       - PYTHONUNBUFFERED=1
 
+  auth:
+    build:
+      context: .
+      dockerfile: Dockerfile.auth
+    ports:
+      - "8001:8000"
+    networks:
+      - app-network
+    volumes:
+      - .:/auth
+    environment:
+      - PYTHONUNBUFFERED=1
+
 networks:
   app-network:
     driver: bridge

@@ -5,6 +5,7 @@ from src.services import yfinance_requests as yfinance_services
 from src.services import tinkoff_requests as tinkoff_requests 
 from typing import Optional, List, Dict
 from datetime import datetime, timedelta
+from enum import Enum
 
 router = APIRouter()
 
@@ -267,37 +268,75 @@ async def get_tickers() -> List[Dict[str, str]]:
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     
-@router.get("/recommendations/{symbol}", response_model=Dict)
+class MarketType(str, Enum):
+    stock = "stock"
+    crypto = "crypto"
+    currency_cross = "currency"
+
+@router.get("/recommendations/{market}/{symbol}", response_model=Dict)
 async def get_recommendations(
+    market: MarketType,
     symbol: str
 ) -> Dict:
     """
-    Возвращает рекомендации по покупке или продаже на основе исторических данных акции.
+    Возвращает рекомендации по покупке или продаже на основе исторических данных указанного актива.
     
     Параметры:
+        market (str): Тип рынка (например, "stock", "crypto", "currency").
         symbol (str): Тикер символа.
     
     Returns:
         dict: Рекомендации по покупке, продаже или удержанию.
+    
+    Raises:
+        HTTPException: Если исторические данные не найдены или произошла ошибка при генерации рекомендаций.
     """
     try:
-        historical_data = await tinkoff_requests.get_historical_data(
-            market="stock",
-            symbol=symbol,
-            from_date=(datetime.now() - timedelta(days=365)).strftime('%Y-%m-%d'),
-            to_date=datetime.now().strftime('%Y-%m-%d'),
-            client_timezone="UTC",
-            interval="1d"
-        )
-        
+        # Определение временного диапазона для исторических данных (последний год)
+        from_date = (datetime.now() - timedelta(days=365)).strftime('%Y-%m-%d')
+        to_date = datetime.now().strftime('%Y-%m-%d')
+        timezone = "UTC"
+
+        # Получение исторических данных в зависимости от типа рынка
+        if market == MarketType.stock:
+            historical_data = await tinkoff_requests.get_historical_data(
+                market="stock",
+                symbol=symbol,
+                from_date=from_date,
+                to_date=to_date,
+                client_timezone=timezone,
+                interval="1d"
+            )
+        elif market == MarketType.crypto:
+            historical_data = await yfinance_services.get_historical_data(
+                market=market,
+                symbol=symbol,
+                from_date=from_date,
+                to_date=to_date,
+                client_timezone=timezone,
+                interval="1d"
+            )
+        elif market == MarketType.currency_cross:
+            historical_data = await yfinance_services.get_historical_data(
+                market=market,
+                symbol=symbol,
+                from_date=from_date,
+                to_date=to_date,
+                client_timezone=timezone,
+                interval="1d"
+            )
+        else:
+            raise HTTPException(status_code=400, detail="Неподдерживаемый тип рынка")
+
         if not historical_data:
             raise HTTPException(
                 status_code=404,
-                detail=f"Исторические данные для акции '{symbol}' не найдены"
+                detail=f"Исторические данные для {market.value} '{symbol}' не найдены"
             )
         
+        # Генерация рекомендаций на основе исторических данных
         recommendation = await tinkoff_requests.generate_recommendation_based_on_history(symbol, historical_data)
-        
+
         return recommendation
 
     except HTTPException as he:
